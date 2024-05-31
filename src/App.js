@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React, { useEffect, useState } from 'react';
+import Navbar from './components/Navbar'; // Your existing Navbar component
+import Loader from './loader/Loader';
+import { Box } from '@mui/material';
+import './App.css';
+import Dashboard from './components/Dashboard';
+import Slidenavbar from './components/Slidenavbar';
+
+const MainComponent = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Adjust the delay time as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {loading && <Loader />}
+      {!loading && (
+        <>
+
+          <Navbar />
+          <Box sx={{ mt: '8em', px: '16px' }}> {/* Margin top to set the distance */}
+            <Dashboard />
+          </Box>
+
+
+          <Slidenavbar />
+
+        </>
+      )}
     </div>
   );
-}
+};
 
-export default App;
+export default MainComponent;
