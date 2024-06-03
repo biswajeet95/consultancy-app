@@ -1,8 +1,8 @@
 
-import { AppBar, Box, Button, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import React, { useState } from 'react';
-import Slidenavbar from './Slidenavbar';
+
 import TopNavbar from './TopNavbar'
 
 const pages = ['HOME', 'SERVICE', 'JOBS', 'ABOUTUS', 'CONTACT'];
@@ -16,7 +16,7 @@ const Navbar = () => {
     };
 
     return (
-        // <Box position='sticky'>
+      
 
 
         <AppBar
@@ -34,6 +34,7 @@ const Navbar = () => {
                         aria-haspopup="true"
                         onClick={handleOpenNavMenu}
                         color="inherit"
+                      sx={{marginRight:"1rem"}}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -86,9 +87,6 @@ const Navbar = () => {
             </Toolbar>
            
         </AppBar>
-
-        // </Box>
-
 
     )
 }
