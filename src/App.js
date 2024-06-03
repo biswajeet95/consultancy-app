@@ -13,7 +13,7 @@ const MainComponent = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Adjust the delay time as needed
+    }, 1000); // Adjust the delay time as needed
 
     return () => clearTimeout(timer);
   }, []);
@@ -25,7 +25,7 @@ const MainComponent = () => {
         <>
 
           <Navbar />
-          <Box sx={{ mt: '7em', px: '16px' }}> {/* Margin top to set the distance */}
+          <Box sx={{ mt: '7em' }}> {/* Margin top to set the distance */}
             <Dashboard />
           </Box>
 

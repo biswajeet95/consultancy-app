@@ -95,7 +95,7 @@ const HeroSection = () => {
                     >
                         <Typography variant="h4" sx={{ fontSize: variant4font, fontWeight: '800', color: "#254163" }} gutterBottom>ONE STEP TO SUCCESS</Typography>
                         <Typography variant="h6" sx={{ fontSize: variant6font, fontWeight: 'bold', color: "blue", mb: 2 }} gutterBottom>Transforming Lives & Transforming Organizations</Typography>
-                        <EmailButton />
+                     
                         <Buttonsection fontName={'Find Opportunity'} font={variant6font} />
                         <Grid container sx={{ display: "flex", my: 2 }}>
                             <Card xs={6} md={6} sx={{ marginRight: '2em', boxShadow: 0 }} id="countup">
@@ -132,8 +132,8 @@ const HeroSection = () => {
                                 width: imageWidth,
                                 height: imageHeight,
                                 overflow: 'hidden',
-                                borderTopRightRadius: '30%',
-                                borderBottomLeftRadius: '30%',
+                                borderTopRightRadius: '60px',
+                                borderBottomLeftRadius: '60px',
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: 'center',
@@ -149,8 +149,7 @@ const HeroSection = () => {
                                     width: '100%',
                                     height: '100%',
                                     objectFit: 'cover',
-                                    borderTopRightRadius: '30%',
-                                    borderBottomLeftRadius: '30%',
+                            
                                    
                                 }}
                             />

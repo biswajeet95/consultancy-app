@@ -1,58 +1,60 @@
-import React, { useState, useEffect } from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 import { Typography } from '@mui/material';
-import makeStyles from '@emotion/styled';
 import anime from 'animejs';
 
-
-const useStyles = makeStyles(() => ({
-    countupContainer: {
-        display: 'inline-block',
-    },
-}));
-
 const CountUp = ({ target, font }) => {
-    const classes = useStyles();
     const [count, setCount] = useState(0);
+    const countupRef = useRef(null);
 
     useEffect(() => {
+        const animateCount = () => {
+            anime({
+                targets: { count: 0 },
+                count: target,
+                duration: 1500,
+                round: 1,
+                easing: 'linear',
+                update: (animation) => {
+                    setCount(Math.floor(animation.animations[0].currentValue));
+                },
+            });
+        };
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         animateCount();
-                        observer.unobserve(entry.target);
                     }
                 });
             },
             { threshold: 0.5 }
         );
 
-        observer.observe(document.getElementById('countup'));
+        if (countupRef.current) {
+            observer.observe(countupRef.current);
+        }
+
+        animateCount(); // Trigger countup on refresh
 
         return () => {
-            observer.disconnect();
+            if (countupRef.current) {
+                observer.unobserve(countupRef.current);
+            }
         };
-    }, []);
-
-    const animateCount = () => {
-        anime({
-            targets: { count: 0 },
-            count: target,
-            duration: 1500, // Set duration to 1000 milliseconds (1 second)
-            round: 1,
-            easing: 'linear',
-            update: (animation) => { // Define animation variable
-                setCount(Math.floor(animation.animations[0].currentValue));
-            },
-        });
-    };
+    }, [target]);
 
     return (
-        <Typography variant="h6" className={classes.countupContainer} sx={{ fontWeight: '800', color: "blue", fontSize:font }}>
+        <Typography
+            variant="h6"
+            ref={countupRef}
+            sx={{ fontWeight: '800', color: 'blue', fontSize: font }}
+        >
             {count.toLocaleString()}+
         </Typography>
     );
 };
 
-
 export default CountUp;
+
