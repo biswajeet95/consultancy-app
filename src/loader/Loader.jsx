@@ -1,7 +1,7 @@
 // Loader.js
 import React from 'react';
 import { Box, CircularProgress, Typography } from '@mui/material';
-import "./Loader.css";
+
 
 
 const Loader = () => {

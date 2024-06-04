@@ -67,14 +67,14 @@ const HeroSection = () => {
     } else if (isTablet) {
         containerHeight = '60vh';
         imageHeight = '50vh';
-        imageWidth = '90%';
+        imageWidth = '50%';
         variant4font = '25px';
         variant6font = '15px';
     } else if (isDesktop) {
         containerHeight = '80vh';
         imageHeight = '70vh';
         imageWidth = '70%';
-        heropagepaddingLeft = "5%"
+     heropagepaddingLeft = "5%";
 
     }
 
