@@ -8,6 +8,13 @@ const Slidenavbar = () => {
     const containerRef = useRef(null);
     const [duration, setDuration] = useState(0);
 
+    const emailAddress = "arbazarmaan37@gmail.com";
+
+    const handleClick = () => {
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}`;
+        window.open(gmailUrl, '_blank');
+    };
+
     useEffect(() => {
 
         const timePerPixel = 5;
@@ -45,6 +52,7 @@ const Slidenavbar = () => {
                 color: "white",
             }}
             ref={containerRef}
+            onClick={handleClick}
         >
             <Box
                 className="marquee"
@@ -72,7 +80,7 @@ const Slidenavbar = () => {
                         lineHeight: '31px',
                         width: 'fit-content',
                         fontWeight: 'bold',
-                        letterSpacing:4
+                        letterSpacing: 4
                     }}
                 >
                     Free Recruitment for Candidates For IT, BPO, HR, Call center, Retail,  Medical, MKTG Jobs  at All Levels...

@@ -1,8 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Container, Box, Grid, Typography, Button, useMediaQuery, useTheme, Card } from '@mui/material';
+import { Container, Box, Grid, Typography, useMediaQuery, useTheme, Card } from '@mui/material';
 import CountUp from './Countup';
-import Buttonsection from './Buttonsection';
 import EmailButton from './EmailButton';
 
 const HeroSection = () => {
@@ -60,15 +59,15 @@ const HeroSection = () => {
 
     if (isMobile) {
         containerHeight = '40vh';
-        imageHeight = '30vh';
+        imageHeight = '50vh';
         imageWidth = '100%';
         variant4font = '10px';
         variant6font = '8px';
     } else if (isTablet) {
         containerHeight = '60vh';
-        imageHeight = '50vh';
-        imageWidth = '50%';
-        variant4font = '25px';
+        imageHeight = '40vh';
+        imageWidth = '80%';
+        variant4font = '20px';
         variant6font = '15px';
     } else if (isDesktop) {
         containerHeight = '80vh';
@@ -94,9 +93,10 @@ const HeroSection = () => {
                         ref={textRef}
                     >
                         <Typography variant="h4" sx={{ fontSize: variant4font, fontWeight: '800', color: "#254163" }} gutterBottom>ONE STEP TO SUCCESS</Typography>
-                        <Typography variant="h6" sx={{ fontSize: variant6font, fontWeight: 'bold', color: "blue", mb: 2 }} gutterBottom>Transforming Lives & Transforming Organizations</Typography>
-                     
-                        <Buttonsection fontName={'Find Opportunity'} font={variant6font} />
+                        <Typography variant="body1" sx={{ fontSize: variant6font, fontWeight: 'bold', color: "blue", mb: 2 }} gutterBottom>Transforming Lives & Transforming Organizations</Typography>
+                      
+                        <EmailButton fontName={'Submit Resume'} font={variant6font} />
+                      
                         <Grid container sx={{ display: "flex", my: 2 }}>
                             <Card xs={6} md={6} sx={{ marginRight: '2em', boxShadow: 0 }} id="countup">
                                 <div>
@@ -138,7 +138,7 @@ const HeroSection = () => {
                                 justifyContent: 'center',
                                 alignItems: 'center',
                                 mx: 'auto',
-                                border: '1px solid blue'
+                               
                             }}
                         >
                             <Box
@@ -147,9 +147,11 @@ const HeroSection = () => {
                                 alt="Wallpaper"
                                 sx={{
                                     width: '100%',
-                                    height: '100%',
+                                    //height: '100%',
                                     objectFit: 'cover',
-                            
+                                    borderTopRightRadius: '60px',
+                                    borderBottomLeftRadius: '60px',
+                                    border: '1px solid #254163'
                                    
                                 }}
                             />

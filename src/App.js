@@ -7,14 +7,12 @@ import './App.css';
 import Dashboard from './components/Dashboard';
 import Slidenavbar from './components/Slidenavbar';
 
-const MainComponent = () => {
+const App = () => {
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000); // Adjust the delay time as needed
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -23,20 +21,16 @@ const MainComponent = () => {
       {loading && <Loader />}
       {!loading && (
         <>
-
           <Navbar />
-          <Box sx={{ mt: '7em' }}> {/* Margin top to set the distance */}
+          <Box sx={{ mt: '5.5em' }}> {/* Margin top to set the distance */}
             <Dashboard />
           </Box>
-
-
           <Slidenavbar />
-
         </>
       )}
     </div>
   );
 };
 
-export default MainComponent;
+export default App;
 

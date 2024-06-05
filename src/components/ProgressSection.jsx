@@ -6,7 +6,7 @@ import CircularProgressBar from './CircularProgressBar'; // Adjust the import pa
 
 const MyApp = ({font}) => {
     return (
-        <Box sx={{ height: '30vh', width: '100%', display: 'flex', backgroundColor: 'white' }}>
+        <Box sx={{ height: '30vh', width: '100%', display: 'flex', backgroundColor: 'white', mb:1 }}>
             <Grid container spacing={4} justifyContent="space-around" alignItems="center">
                 <Grid item xs={4} md={4} sx={{ textAlign: 'center' }}>
                     <CircularProgressBar target={1000} />
