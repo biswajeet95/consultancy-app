@@ -22,7 +22,7 @@ const App = () => {
       {!loading && (
         <>
           <Navbar />
-          <Box sx={{ mt: '6em' }}> {/* Margin top to set the distance */}
+          <Box sx={{ mt: '5.5em' }}> {/* Margin top to set the distance */}
             <Dashboard />
           </Box>
           <Slidenavbar />
