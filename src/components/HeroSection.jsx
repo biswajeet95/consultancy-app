@@ -144,7 +144,7 @@ const HeroSection = () => {
                             <Box
                                 component="img"
                                 src="./image/wallpaper.png"
-                                alt="Wallpaper"
+                                alt="IQra Consultancy"
                                 sx={{
                                     width: '100%',
                                     //height: '100%',

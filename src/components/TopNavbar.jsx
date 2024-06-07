@@ -21,12 +21,12 @@ const Navbar = () => {
             <Toolbar variant="dense" sx={{ justifyContent: 'space-between', minHeight: '30px !important', padding: '3px 6px' }}>
                 <Box>
                     <Typography sx={{ fontWeight: 'bold' }} variant={isMobile ? 'body2' : 'body1'}>
-                        HotlineCall: 7075910637, 7075910637
+                        Call: 7075910637, 9676311306
                     </Typography>
                 </Box>
                 <Box>
                     <Typography sx={{ fontWeight: 'bold' }} variant={isMobile ? 'body2' : 'body1'}>
-                        xyz@gmail.com
+                    admin@iqraconsultancy.in, arbazarmaan37@gmail.com
                     </Typography>
                 </Box>
                 <Box sx={{ display: "flex" }}>

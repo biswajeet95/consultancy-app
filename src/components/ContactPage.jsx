@@ -57,15 +57,15 @@ const ContactPage = () => {
                         </div>
                         <div>
                             <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>Phone Number:</Typography>
-                            <Typography variant="body2" component="p">70759 10637, 70759 10637</Typography>
+                            <Typography variant="body2" component="p">70759 10637, 9676311306</Typography>
                         </div>
                         <div>
                             <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>Email:</Typography>
-                            <Typography variant="body2" component="p">arbazarmaan37@gmail.com, arbazarmaan37@gmail.com</Typography>
+                            <Typography variant="body2" component="p">admin@iqraconsultancy.in, arbazarmaan37@gmail.com</Typography>
                         </div>
                         <div>
                             <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>For Manpower Supply</Typography>
-                            <Typography variant="body2" component="p">arbazarmaan37@gmail.com, arbazarmaan37@gmail.com</Typography>
+                            <Typography variant="body2" component="p">iqraconsultancy.in</Typography>
                         </div>
                     </StyledGrid>
                     <StyledGrid item xs={11} md={5} gridheight={gridheight} variant4font={variant4font}>
