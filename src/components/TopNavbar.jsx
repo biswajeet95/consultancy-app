@@ -1,9 +1,6 @@
 import { AppBar, Box, IconButton, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React from 'react';
-import XIcon from '@mui/icons-material/X';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { X as XIcon, Instagram as InstagramIcon, Facebook as FacebookIcon, LinkedIn as LinkedInIcon } from '@mui/icons-material';
 
 const Navbar = () => {
     const theme = useTheme();
@@ -26,10 +23,12 @@ const Navbar = () => {
                 </Box>
                 <Box>
                     <Typography sx={{ fontWeight: 'bold' }} variant={isMobile ? 'body2' : 'body1'}>
-                    admin@iqraconsultancy.in, arbazarmaan37@gmail.com
+                        admin@iqraconsultancy.in, arbazarmaan37@gmail.com
                     </Typography>
                 </Box>
-                <Box sx={{ display: "flex" }}>
+
+
+                <Box sx={{ display: "flex", flexWrap: "wrap" }}>
                     <a href="#">
                         <IconButton style={{ color: 'white', padding: '4px' }}>
                             <XIcon style={{ fontSize: '15px' }} />
