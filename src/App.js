@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar'; // Your existing Navbar component
 import Loader from './loader/Loader';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import './App.css';
 import Dashboard from './components/Dashboard';
 import Slidenavbar from './components/Slidenavbar';
@@ -21,9 +21,16 @@ const App = () => {
       {loading && <Loader />}
       {!loading && (
         <>
-        <div>
-          <h1>ERROR 404</h1>
-        </div>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            height="100vh"
+          >
+            <Typography variant="h3">
+              ERROR 404
+            </Typography>
+          </Box>
           {/* <Navbar />
           <Box sx={{ mt: '5.5em' }}> 
             <Dashboard />
