@@ -21,11 +21,16 @@ const App = () => {
       {loading && <Loader />}
       {!loading && (
         <>
-          <Navbar />
-          <Box sx={{ mt: '5.5em' }}> {/* Margin top to set the distance */}
+        <div>
+          <h1>ERROR 404</h1>
+        </div>
+          {/* <Navbar />
+          <Box sx={{ mt: '5.5em' }}> 
             <Dashboard />
           </Box>
-          <Slidenavbar />
+          <Slidenavbar /> */}
+
+
         </>
       )}
     </div>
