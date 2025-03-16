@@ -18,7 +18,7 @@ const Navbar = () => {
             <Toolbar variant="dense" sx={{ justifyContent: 'space-between', minHeight: '30px !important', padding: '3px 6px' }}>
                 <Box>
                     <Typography sx={{ fontWeight: 'bold' }} variant={isMobile ? 'body2' : 'body1'}>
-                        Call: 6370620597
+                      
                     </Typography>
                 </Box>
                 <Box>
