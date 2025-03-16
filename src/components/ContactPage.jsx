@@ -57,11 +57,11 @@ const ContactPage = () => {
                         </div>
                         <div>
                             <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>Phone Number:</Typography>
-                            <Typography variant="body2" component="p">70759 10637, 9676311306</Typography>
+                          
                         </div>
                         <div>
                             <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>Email:</Typography>
-                            <Typography variant="body2" component="p">admin@iqraconsultancy.in, arbazarmaan37@gmail.com</Typography>
+                        
                         </div>
                         <div>
                             <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>For Manpower Supply</Typography>
