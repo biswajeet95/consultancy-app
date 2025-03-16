@@ -21,16 +21,7 @@ const App = () => {
       {loading && <Loader />}
       {!loading && (
         <>
-          // <Box
-          //   display="flex"
-          //   justifyContent="center"
-          //   alignItems="center"
-          //   height="100vh"
-          // >
-          //   <Typography variant="h3">
-          //     ERROR 404
-          //   </Typography>
-          // </Box>
+ 
            <Navbar />
           <Box sx={{ mt: '5.5em' }}> 
             <Dashboard />
