@@ -83,8 +83,7 @@ const Slidenavbar = () => {
                         letterSpacing: 4
                     }}
                 >
-                    Free Recruitment for Candidates For IT, BPO, HR, Call center, Retail,  Medical, MKTG Jobs  at All Levels...
-                    Please Walkin or Call Mon To Sat 9.00AM to 6.00PM Click Here For Hot Openings
+                    Build. Grow. Succeed. Professional Website Development Services
                 </Typography>
             </Box>
         </Box>

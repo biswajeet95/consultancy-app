@@ -24,12 +24,12 @@ const OurService = () => {
     }
 
     return (
-        <Box 
-            sx={{ 
-                width: '100%', 
-                textAlign: 'center', 
-                pt: 4,pb:4,
-                backgroundColor: "#F5F5F5", 
+        <Box
+            sx={{
+                width: '100%',
+                textAlign: 'center',
+                pt: 4, pb: 4,
+                backgroundColor: "#F5F5F5",
                 color: "#254163",
                 transition: 'opacity 1s, transform 1s',
                 opacity: mounted ? 1 : 0,
@@ -42,26 +42,26 @@ const OurService = () => {
             <Grid container sx={{ p: 1, justifyContent: 'center' }}>
                 <Grid item xs={11} md={5} sx={gridItemStyle(variantFont)}>
                     <Typography variant="h4" sx={{ fontWeight: '800', fontSize: variantFont, mb: 1 }}>
-                        Permanent Recruitment
+                        Our Solutions
                     </Typography>
                     <Typography variant="body1" component="p" sx={{ marginBottom: '20px', fontSize: variantFont }}>
-                        We meticulously identify the perfect candidates for permanent recruitment—a process that demands time,
-                        skill, and extensive experience. What does this translate to for hiring professionals? Essentially,
-                        it means you'll be partnered with a seasoned recruitment specialist who possesses a wealth of talent resources,
-                        streamlining your process, and connecting you with the most invaluable asset of all—exceptional individuals.
+                        At IQra Consultancy, we specialize in crafting modern, responsive, and high-performance websites tailored to meet your unique business goals.
+                        Whether you're a startup looking for your first online presence, a growing business in need of a fresh redesign,
+                        or an entrepreneur with a bold idea — we’re here to bring your vision to life.We offer end-to-end web development solutions, including custom website design, WordPress development,
+                        e-commerce sites, landing pages, and business portfolios.
+
+
                     </Typography>
                 </Grid>
                 <Grid item xs={11} md={5} sx={gridItemStyle(variantFont)}>
                     <Typography variant="h4" sx={{ fontWeight: '800', fontSize: variantFont, mb: 1 }}>
-                        Recruitment Process Outsourcing
+                        Our Facilities
                     </Typography>
                     <Typography variant="body1" component="p" sx={{ marginBottom: '20px', fontSize: variantFont }}>
-                        Acquiring talent in the present landscape poses greater challenges than it did just a few years ago.
-                        Recruitment consultants are now required to exhibit heightened efficiency, accountability,
-                        and flexibility to meet real-time business demands. When making hiring decisions,
-                        organizations must take into account various facets of operations, finance, business,
-                        and HR. Clients have the flexibility to choose from different models based on their specific needs,
-                        including the project model, skill model, turnkey model, hybrid model, and total solution model.
+                        Every site we build is mobile-friendly, SEO-optimized, and designed for smooth user experience.
+                        With a strong focus on quality, transparency, and timely delivery, our goal is to help you stand out online and convert visitors into loyal customers.
+                        Let’s build something amazing together!
+
                     </Typography>
                 </Grid>
             </Grid>

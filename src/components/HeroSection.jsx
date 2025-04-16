@@ -92,27 +92,10 @@ const HeroSection = () => {
                         }}
                         ref={textRef}
                     >
-                        <Typography variant="h4" sx={{ fontSize: variant4font, fontWeight: '800', color: "#254163" }} gutterBottom>ONE STEP TO SUCCESS</Typography>
+                        <Typography variant="h4" sx={{ fontSize: variant4font, fontWeight: '800', color: "#254163" }} gutterBottom>Build. Grow. Succeed. Professional Website Development Services</Typography>
                         <Typography variant="body1" sx={{ fontSize: variant6font, fontWeight: 'bold', color: "blue", mb: 2 }} gutterBottom>Transforming Lives & Transforming Organizations</Typography>
                       
-                        <EmailButton fontName={'Submit Resume'} font={variant6font} />
-                      
-                        <Grid container sx={{ display: "flex", my: 2 }}>
-                            <Card xs={6} md={6} sx={{ marginRight: '2em', boxShadow: 0 }} id="countup">
-                                <div>
-                                    <CountUp target={1000} font={variant4font} />
-                                </div>
-                                <Typography variant="h6" sx={{ fontWeight: 'bold', fontSize: variant4font, color: "#254163" }} >Placements</Typography>
-                            </Card>
-                            <Card xs={6} md={6} sx={{ marginRight: '10px', boxShadow: 0 }} id="countup">
-                                <div>
-                                    <CountUp target={1000} font={variant4font} />
-                                </div>
-                                <Typography variant="h6" sx={{ fontWeight: 'bold', fontSize: variant4font, color: "#254163" }} >Happy Students</Typography>
-                            </Card>
-
-                        </Grid>
-
+                        <EmailButton fontName={'Contact'} font={variant6font} />
 
 
 

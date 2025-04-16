@@ -3,15 +3,10 @@ import React from 'react';
 import { Box, Typography, Grid, useMediaQuery, useTheme } from '@mui/material';
 import { styled } from '@mui/system';
 import InputBox from './InputBox';
-
+import EmailButton from './EmailButton';
 const StyledGrid = styled(Grid)(({ theme, gridheight, variant4font }) => ({
     height: gridheight,
     textAlign: 'left',
-    borderTopRightRadius: '80px',
-    borderBottomLeftRadius: '80px',
-    border: '1px solid #254163',
-    backgroundColor: "white",
-    overflow: 'hidden',
     margin: theme.spacing(1),
     padding: theme.spacing(3),
     transition: 'all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)',
@@ -49,28 +44,21 @@ const ContactPage = () => {
         <>
             <Box sx={{ width: '100%', textAlign: 'center', pt: 4, pb: 4, color: "#254163" }}>
                 <Typography variant="h4" sx={{ fontWeight: '800', fontSize: variant6font, mb: 3 }}>CONTACT US</Typography>
-                <Grid container sx={{ p: 1, justifyContent: 'center' }}>
+                <Grid container >
                     <StyledGrid item xs={11} md={5} gridheight={gridheight} variant4font={variant4font}>
                         <div>
-                            <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>IQra Consultancy</Typography>
-                            <Typography variant="body2" component="p">IQra Consultancy, 48, Sector 5, HSR Layout, Bengaluru, Karnataka 560102</Typography>
+                            <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont, mb:5 }}>IQra Consultancy</Typography>
+
                         </div>
+
                         <div>
-                            <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>Phone Number:</Typography>
-                          
-                        </div>
-                        <div>
-                            <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>Email:</Typography>
-                        
-                        </div>
-                        <div>
-                            <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont }}>For Manpower Supply</Typography>
-                            <Typography variant="body2" component="p">iqraconsultancy.in</Typography>
+
+                            <EmailButton fontName={'Contact'} font={variant6font} />
                         </div>
                     </StyledGrid>
-                    <StyledGrid item xs={11} md={5} gridheight={gridheight} variant4font={variant4font}>
+                    {/* <StyledGrid item xs={11} md={5} gridheight={gridheight} variant4font={variant4font}>
                         <InputBox />
-                    </StyledGrid>
+                    </StyledGrid> */}
                 </Grid>
             </Box></>);
 }; export default ContactPage;

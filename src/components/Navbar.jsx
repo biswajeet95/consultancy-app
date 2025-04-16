@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import TopNavbar from './TopNavbar';
 
-const pages = ['HOME', 'SERVICE', 'JOBS', 'ABOUTUS', 'CONTACT'];
+const pages = ['HOME', 'BLOGS', 'SERVICE', 'CONTACT'];
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);

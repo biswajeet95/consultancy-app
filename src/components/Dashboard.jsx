@@ -14,13 +14,13 @@ const Dashboard = () => {
       <section id="home">
         <HeroSection />
       </section>
-      <section id="aboutus">
+      <section id="blogs">
         <Ditails />
       </section>
-      <section id="jobs">
+      {/* <section id="aboutus">
         <JobSection />
-      </section>
-      <Workfromhome />
+      </section> */}
+      {/* <Workfromhome /> */}
       <section id="service">
         <OurService />
       </section>
