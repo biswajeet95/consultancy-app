@@ -11,7 +11,9 @@ export const blogs = [
         description: "Exploring the impact of artificial intelligence on various industries.",
         content: "Full blog content here...",
         image: aiImage,
+        date: "2025-04-10"
     },
+
     {
         id: 2,
         slug: "web-development-trends-2025",
@@ -19,6 +21,7 @@ export const blogs = [
         description: "A look at the latest trends in web development and frameworks.",
         content: "More details here...",
         image: webImage,
+        date: "2025-04-10"
     },
     {
         id: 3,
@@ -27,6 +30,7 @@ export const blogs = [
         description: "Simple lifestyle changes for a healthier life.",
         content: "Healthy habits info here...",
         image: healthImage,
+        date: "2025-04-10"
     },
     {
         id: 4,
@@ -35,6 +39,7 @@ export const blogs = [
         description: "Robots and AI combining forces.",
         content: "Deep dive into robotics...",
         image: healthImg,
+        date: "2025-04-10"
     },
     {
         id: 5,
@@ -43,6 +48,7 @@ export const blogs = [
         description: "Exploring the impact of artificial intelligence on various industries.",
         content: "Full blog content here...",
         image: aiImage,
+        date: "2025-04-10"
     },
     {
         id: 6,
@@ -51,7 +57,9 @@ export const blogs = [
         description: "A look at the latest trends in web development and frameworks.",
         content: "More details here...",
         image: webImage,
+        date: "2025-04-10"
     },
+
     {
         id: 7,
         slug: "healthy-living-tips",
@@ -59,6 +67,7 @@ export const blogs = [
         description: "Simple lifestyle changes for a healthier life.",
         content: "Healthy habits info here...",
         image: healthImage,
+        date: "2025-04-10"
     },
     {
         id: 8,
@@ -67,5 +76,6 @@ export const blogs = [
         description: "Robots and AI combining forces.",
         content: "Deep dive into robotics...",
         image: healthImg,
+        date: "2025-04-10"
     }
 ];

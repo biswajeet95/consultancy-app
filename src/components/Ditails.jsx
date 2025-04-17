@@ -26,14 +26,18 @@ const Ditails = () => {
         <Container sx={{ py: 4 }}>
             <Box display="flex" justifyContent="space-between" alignItems="center" mb={3} sx={{ cursor: "pointer", color: "#254163" }}>
                 <Typography variant="h4" sx={{ fontWeight: '800', fontSize: variant6font }}>Recent Blogs</Typography>
-                <Typography
-                    variant="body1"
-                    color="primary"
-                    sx={{ cursor: "pointer", fontWeight: 500, color: "#254163", fontSize: variant6font }}
-                    onClick={() => navigate("/blogs")}
-                >
-                    View all blogs &gt;
-                </Typography>
+
+                <Box sx={{ position: "relative", zIndex: 10 }}>
+                    <Typography
+                        variant="body1"
+                        sx={{ cursor: "pointer", fontWeight: 500, color: "#254163", fontSize: variant6font }}
+                        onClick={() => navigate("/blogs")}
+                    >
+                        View all blogs &gt;
+                    </Typography>
+                </Box>
+
+
             </Box>
 
             <Box display="flex" flexWrap="wrap" gap={3} justifyContent="center">

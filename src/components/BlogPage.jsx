@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { blogs } from "../data/blogs";
@@ -12,61 +13,143 @@ import {
   useMediaQuery,
   useTheme,
   Fab,
-  Tooltip
+  Tooltip,
 } from "@mui/material";
-import HomeIcon from '@mui/icons-material/Home';
+import HomeIcon from "@mui/icons-material/Home";
+import { Helmet } from "react-helmet-async";
+
 
 const BlogPage = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const selectedBlog = slug ? blogs.find(blog => blog.slug === slug) : null;
+  const selectedBlog = slug ? blogs.find((blog) => blog.slug === slug) : null;
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
 
-  let variantFont = '15px';
+  let variantFont = "15px";
   let variant6font;
   if (isMobile) {
-    variantFont = '12px';
-    variant6font = '12px';
+    variantFont = "12px";
+    variant6font = "12px";
   } else if (isTablet) {
-    variantFont = '15px';
-    variant6font = '10px';
+    variantFont = "15px";
+    variant6font = "10px";
   }
 
   return (
-    <Container sx={{ py: 4, cursor: "pointer", position: "relative" }}>
+    <Container sx={{ py: 4, position: "relative" }}>
       {selectedBlog ? (
         <>
-          <Typography variant="h4" gutterBottom sx={{ fontWeight: '800', fontSize: variant6font, color: "#254163", mt: 2 }}>
+          {/* SEO Helmet Section for individual blog */}
+          <Helmet>
+            <title>{selectedBlog.title} | Your Site Name</title>
+            <meta name="description" content={selectedBlog.description} />
+            <meta property="og:title" content={selectedBlog.title} />
+            <meta property="og:description" content={selectedBlog.description} />
+            <meta property="og:image" content={selectedBlog.image} />
+            <link
+              rel="canonical"
+              href={`https://www.iqraconsultancy.in/blogs/${slug}`}
+            />
+
+            {/* ✅ Schema.org Structured Data */}
+            <script type="application/ld+json">
+              {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": selectedBlog.title,
+                "description": selectedBlog.description,
+                "image": selectedBlog.image,
+                "author": {
+                  "@type": "Person",
+                  "name": "Biswajeet"
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "iqraconsultancy",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.iqraconsultancy.in/logo192.png" // your actual logo URL
+                  }
+                },
+                "datePublished": selectedBlog.date || "2025-01-01",
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": `https://www.iqraconsultancy.in/blogs/${selectedBlog.slug}`
+                }
+              })}
+            </script>
+          </Helmet>
+
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{
+              fontWeight: "800",
+              fontSize: variant6font,
+              color: "#254163",
+              mt: 2,
+            }}
+          >
             {selectedBlog.title}
           </Typography>
           <Card>
-            <CardMedia component="img" height="300" image={selectedBlog.image} alt={selectedBlog.title} />
+            <CardMedia
+              component="img"
+              height="300"
+              image={selectedBlog.image}
+              alt={selectedBlog.title}
+            />
             <CardContent>
-              <Typography variant="body1" sx={{ mt: 2 }}>{selectedBlog.content}</Typography>
+              <Typography variant="body1" sx={{ mt: 2 }}>
+                {selectedBlog.content}
+              </Typography>
             </CardContent>
           </Card>
         </>
       ) : (
         <>
-          <Typography variant="h4" gutterBottom sx={{ fontWeight: '800', fontSize: variant6font, color: "#254163", mt: 2 }}>
+          <Helmet>
+            <link rel="canonical" href={"https://www.iqraconsultancy.in/blogs"} />
+          </Helmet>
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{
+              fontWeight: "800",
+              fontSize: variant6font,
+              color: "#254163",
+              mt: 2,
+            }}
+          >
             All Blogs
           </Typography>
 
-
           <Box display="flex" flexWrap="wrap" gap={3} justifyContent="center">
-            {[...blogs].reverse().map((blog) => (
-              <Card key={blog.id} sx={{ width: 280 }} onClick={() => navigate(`/blogs/${blog.slug}`)}>
-                <CardMedia component="img" height="140" image={blog.image} alt={blog.title} />
-                <CardContent>
-                  <Typography variant="h6">{blog.title}</Typography>
-                  <Typography variant="body2" color="text.secondary">{blog.description}</Typography>
-                </CardContent>
-              </Card>
-            ))}
+            {[...blogs]
+              .reverse()
+              .map((blog) => (
+                <Card
+                  key={blog.id}
+                  sx={{ width: 280, cursor: "pointer" }}
+                  onClick={() => navigate(`/blogs/${blog.slug}`)}
+                >
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={blog.image}
+                    alt={blog.title}
+                  />
+                  <CardContent>
+                    <Typography variant="h6">{blog.title}</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {blog.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              ))}
           </Box>
-
         </>
       )}
 
@@ -81,9 +164,9 @@ const BlogPage = () => {
             bottom: 30,
             right: 20,
             backgroundColor: "#254163",
-            '&:hover': {
+            "&:hover": {
               backgroundColor: "#1b2f4b",
-            }
+            },
           }}
         >
           <HomeIcon />

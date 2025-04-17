@@ -39,7 +39,7 @@ const Navbar = () => {
                             <InstagramIcon style={{ fontSize: '15px' }} />
                         </IconButton>
                     </a>
-                    <a href="https://www.facebook.com/arbaz.armaan.3/">
+                    <a href="#">
                         <IconButton style={{ color: 'white', padding: '4px' }}>
                             <FacebookIcon style={{ fontSize: '15px' }} />
                         </IconButton>
