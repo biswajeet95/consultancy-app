@@ -2,7 +2,6 @@
 import React from 'react';
 import { Box, Typography, Grid, useMediaQuery, useTheme } from '@mui/material';
 import { styled } from '@mui/system';
-import InputBox from './InputBox';
 import EmailButton from './EmailButton';
 const StyledGrid = styled(Grid)(({ theme, gridheight, variant4font }) => ({
     height: gridheight,
@@ -56,9 +55,7 @@ const ContactPage = () => {
                             <EmailButton fontName={'Contact'} font={variant6font} />
                         </div>
                     </StyledGrid>
-                    {/* <StyledGrid item xs={11} md={5} gridheight={gridheight} variant4font={variant4font}>
-                        <InputBox />
-                    </StyledGrid> */}
+              
                 </Grid>
             </Box></>);
 }; export default ContactPage;

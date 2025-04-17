@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Container, Box, Grid, Typography, useMediaQuery, useTheme, Card } from '@mui/material';
-import CountUp from './Countup';
 import EmailButton from './EmailButton';
 
 const HeroSection = () => {

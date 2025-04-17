@@ -8,7 +8,7 @@ const Slidenavbar = () => {
     const containerRef = useRef(null);
     const [duration, setDuration] = useState(0);
 
-    const emailAddress = "arbazarmaan37@gmail.com";
+    const emailAddress = "bmoharana95@gmail.com";
 
     const handleClick = () => {
         const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}`;
@@ -48,7 +48,7 @@ const Slidenavbar = () => {
                 zIndex: 1000,
                 display: 'flex',
                 backgroundColor: "#97A4E3",
-
+                 cursor: "pointer",
                 color: "white",
             }}
             ref={containerRef}

@@ -2,25 +2,24 @@ import React from 'react';
 import HeroSection from './HeroSection';
 import { Box } from '@mui/material';
 import Ditails from './Ditails';
-import JobSection from './JobSection';
-import Workfromhome from './Workfromhome';
 import Footer from './Footer';
 import OurService from './OurService';
 import ContactPage from './ContactPage';
 
 const Dashboard = () => {
   return (
-    <Box component="main">
+    <Box component="main"
+      sx={{
+        overflowX: 'hidden',
+        width: '100%',
+        boxSizing: 'border-box'
+      }}>
       <section id="home">
         <HeroSection />
       </section>
       <section id="blogs">
         <Ditails />
       </section>
-      {/* <section id="aboutus">
-        <JobSection />
-      </section> */}
-      {/* <Workfromhome /> */}
       <section id="service">
         <OurService />
       </section>

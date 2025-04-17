@@ -5,7 +5,6 @@ import { Button } from '@mui/material';
 import IosShareIcon from '@mui/icons-material/IosShare';
 
 const EmailButton = ({ fontName, font }) => {
-  //const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe06ZPzCnm9uPzZO4IuewqoWm_rMwLhTJw81fSuRkO9JNH6LA/viewform";
   const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfq_tZA9VZBUJ1gHbeQUw2EqYZKSox6wnk5_rCMSYJZtbU7uA/viewform?usp=pp_url";
   const handleClick = () => {
     window.open(googleFormUrl, '_blank');
