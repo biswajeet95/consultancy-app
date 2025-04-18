@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { blogs } from "../data/blogs";
 import {
   Container,
@@ -17,7 +17,6 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import { Helmet } from "react-helmet-async";
-
 
 const BlogPage = () => {
   const { slug } = useParams();
@@ -37,6 +36,10 @@ const BlogPage = () => {
     variant6font = "10px";
   }
 
+  // console.log("Blog content:", selectedBlog?.content);
+  // console.log("Current slug:", slug);
+  // console.log("Matched blog:", selectedBlog);
+
   return (
     <Container sx={{ py: 4, position: "relative" }}>
       {selectedBlog ? (
@@ -52,32 +55,30 @@ const BlogPage = () => {
               rel="canonical"
               href={`https://www.iqraconsultancy.in/blogs/${slug}`}
             />
-
-            {/* ✅ Schema.org Structured Data */}
             <script type="application/ld+json">
               {JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
-                "headline": selectedBlog.title,
-                "description": selectedBlog.description,
-                "image": selectedBlog.image,
-                "author": {
+                headline: selectedBlog.title,
+                description: selectedBlog.description,
+                image: selectedBlog.image,
+                author: {
                   "@type": "Person",
-                  "name": "Biswajeet"
+                  name: "Biswajeet",
                 },
-                "publisher": {
+                publisher: {
                   "@type": "Organization",
-                  "name": "iqraconsultancy",
-                  "logo": {
+                  name: "iqraconsultancy",
+                  logo: {
                     "@type": "ImageObject",
-                    "url": "https://www.iqraconsultancy.in/logo192.png" // your actual logo URL
-                  }
+                    url: "https://www.iqraconsultancy.in/logo192.png",
+                  },
                 },
-                "datePublished": selectedBlog.date || "2025-01-01",
-                "mainEntityOfPage": {
+                datePublished: selectedBlog.date || "2025-01-01",
+                mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": `https://www.iqraconsultancy.in/blogs/${selectedBlog.slug}`
-                }
+                  "@id": `https://www.iqraconsultancy.in/blogs/${selectedBlog.slug}`,
+                },
               })}
             </script>
           </Helmet>
@@ -94,6 +95,20 @@ const BlogPage = () => {
           >
             {selectedBlog.title}
           </Typography>
+
+          <Box sx={{ mb: 2 }}>
+            {selectedBlog.tags?.map((tag, index) => (
+              <Link key={index} to={`/tags/${tag.toLowerCase()}`} style={{ textDecoration: 'none' }}>
+                <Typography
+                  variant="caption"
+                  sx={{ mr: 1, color: "#1976d2", fontWeight: 500 }}
+                >
+                  #{tag}
+                </Typography>
+              </Link>
+            ))}
+          </Box>
+
           <Card>
             <CardMedia
               component="img"
@@ -102,17 +117,17 @@ const BlogPage = () => {
               alt={selectedBlog.title}
             />
             <CardContent>
-              <Typography variant="body1" sx={{ mt: 2 }}>
-                {selectedBlog.content}
-              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ mt: 2 }}
+                component="div"
+                dangerouslySetInnerHTML={{ __html: selectedBlog.content }}
+              />
             </CardContent>
           </Card>
         </>
       ) : (
         <>
-          <Helmet>
-            <link rel="canonical" href={"https://www.iqraconsultancy.in/blogs"} />
-          </Helmet>
           <Typography
             variant="h4"
             gutterBottom
@@ -143,7 +158,23 @@ const BlogPage = () => {
                   />
                   <CardContent>
                     <Typography variant="h6">{blog.title}</Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mt: 1 }}>
+                      {blog.tags?.map((tag, index) => (
+                        <Link
+                          key={index}
+                          to={`/tags/${tag.toLowerCase()}`}
+                          style={{ textDecoration: "none" }}
+                        >
+                          <Typography
+                            variant="caption"
+                            sx={{ color: "#1976d2", fontWeight: 500 }}
+                          >
+                            #{tag}
+                          </Typography>
+                        </Link>
+                      ))}
+                    </Box>
+                    <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
                       {blog.description}
                     </Typography>
                   </CardContent>
