@@ -216,7 +216,7 @@ export const blogs = [
     description: "Simple lifestyle changes for a healthier life.",
     content: "<p>Drink water, sleep well, and move more. Small steps matter!</p>",
     image: healthImage,
-    tags: ["Health", "Lifestyle"],
+    tags: ["Development", "Learning"],
     date: "2025-04-19",
     content: `<section>
   <h1>🌐 How to Learn Web Development in 2025: A Complete Roadmap for Beginners</h1>
