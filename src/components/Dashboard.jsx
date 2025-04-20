@@ -5,6 +5,7 @@ import Ditails from './Ditails';
 import Footer from './Footer';
 import OurService from './OurService';
 import ContactPage from './ContactPage';
+import PrivacyPolicy from './PrivacyPolicy';
 
 const Dashboard = () => {
   return (
@@ -23,8 +24,14 @@ const Dashboard = () => {
       <section id="service">
         <OurService />
       </section>
+      <section id="privacypolicy">
+        <PrivacyPolicy />
+      </section>
       <section id="contact">
         <ContactPage />
+      </section>
+      <section id="about">
+      
       </section>
       <Footer />
     </Box>

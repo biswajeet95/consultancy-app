@@ -77,7 +77,7 @@ const HeroSection = () => {
     }
 
     return (
-        <Container maxWidth="xl" sx={{ height: containerHeight, mb:3 }}>
+        <Container maxWidth="xl" sx={{ height: containerHeight, mb:3, backgroundColor: "#F5F5F5" }}>
             <Box sx={{ display: "flex", height: '100%', padding: '1rem' }}>
                 <Grid container spacing={2} justifyContent="center" alignItems="center" sx={{ paddingLeft: heropagepaddingLeft }}>
                     <Grid

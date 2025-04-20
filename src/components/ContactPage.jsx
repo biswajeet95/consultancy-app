@@ -1,61 +1,103 @@
 
-import React from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { Box, Typography, Grid, useMediaQuery, useTheme } from '@mui/material';
-import { styled } from '@mui/system';
 import EmailButton from './EmailButton';
-const StyledGrid = styled(Grid)(({ theme, gridheight, variant4font }) => ({
-    height: gridheight,
-    textAlign: 'left',
-    margin: theme.spacing(1),
-    padding: theme.spacing(3),
-    transition: 'all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)',
-    '& h4': {
-        fontWeight: 800, fontSize: variant4font, marginBottom: theme.spacing(1),
-        transition: 'font-size 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)'
-    },
-    '& p': {
-        marginBottom: theme.spacing(2), fontSize: '12px',
-        transition: 'font-size 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)'
-    }
-}));
+
 const ContactPage = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
-    const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
-    let variant4font;
-    let variant6font;
-    let gridheight;
+
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
     let variantFont = '15px';
+    let variant6font
     if (isMobile) {
         variantFont = '12px';
-        gridheight = '70%';
-        variant4font = '8px';
         variant6font = '12px';
     } else if (isTablet) {
-        gridheight = '80%';
-        variant4font = '10px';
-        variant6font = '10px';
         variantFont = '15px';
-    } else if (isDesktop) {
-        variant4font = '15px';
-    } return (
-        <>
-            <Box sx={{ width: '100%', textAlign: 'center', pt: 4, pb: 4, color: "#254163" }}>
-                <Typography variant="h4" sx={{ fontWeight: '800', fontSize: variant6font, mb: 3 }}>CONTACT US</Typography>
-                <Grid container >
-                    <StyledGrid item xs={11} md={5} gridheight={gridheight} variant4font={variant4font}>
-                        <div>
-                            <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont, mb:5 }}>IQra Consultancy</Typography>
+        variant6font = '10px';
+    }
 
-                        </div>
+    return (
+        <Box
+            sx={{
+                width: '100%',
+                textAlign: 'center',
+                pt: 4, pb: 4,
+                backgroundColor: "#F5F5F5",
+                color: "#254163",
+                transition: 'opacity 1s, transform 1s',
+                opacity: mounted ? 1 : 0,
+                transform: mounted ? 'translateY(0)' : 'translateY(20px)'
+            }}
+        >
+         
+            <Grid container sx={{ p: 1, justifyContent: 'center' }}>
+            <Grid item xs={11} md={5} sx={gridItemStyle(variantFont)}>
+                     <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont, mb: 1 }}>
+                         ABOUT US
+                     </Typography>
+                     <Typography variant="body1" component="p" sx={{ marginBottom: '20px', fontSize: variantFont }}>
+                         <p className="mb-2">
+                            Welcome to IQra ! I'm jeet, a passionate blogger who loves writing about New Tech and Web Development Knowladge.
+                         </p>
+                         <p className="mb-2">
+                             This blog is all about sharing valuable insights, tips, and stories on Tech and Development Learning. My goal is to create a space where readers can find inspiration and helpful information.
+                         </p>
+                         <p>
+                             Thanks for visiting, and feel free to connect with me!
+                         </p>
 
-                        <div>
+                     </Typography>
+                 </Grid>
+          
 
-                            <EmailButton fontName={'Contact'} font={variant6font} />
-                        </div>
-                    </StyledGrid>
-              
-                </Grid>
-            </Box></>);
-}; export default ContactPage;
+
+
+                <Grid item xs={11} md={5} sx={gridItemStyle(variantFont)}>
+                     <Typography variant="h3" sx={{ fontWeight: '800', fontSize: variantFont, mb: 1 }}>
+                         CONTACT US
+                     </Typography>
+                     <div>
+                         <Typography variant="h4" sx={{ fontWeight: '800', fontSize: variantFont, mb: 5 }}>IQra Consultancy</Typography>
+                         <p>
+                             If you have any questions or concerns, contact us at:
+                             <br />
+                             <strong>Email:moharana9519@gmail.com
+                             </strong>
+                         </p>
+                         <EmailButton fontName={'Contact'} font={variant6font} />
+                     </div>
+                 </Grid>
+            </Grid>
+        </Box>
+    );
+};
+
+const gridItemStyle = (fontSize) => ({
+    textAlign: 'left',
+    borderTopRightRadius: '80px',
+    borderBottomLeftRadius: '80px',
+    border: '1px solid #254163',
+    backgroundColor: "white",
+    overflow: 'hidden',
+    margin: '8px',
+    padding: '24px',
+    fontSize: fontSize,
+    transition: 'opacity 1s, transform 1s',
+    opacity: 1,
+    transform: 'translateY(0)'
+});
+
+export default ContactPage;
+
+
+
+
