@@ -41,7 +41,7 @@ const Ditails = () => {
             </Box>
 
             <Box display="flex" flexWrap="wrap" gap={3} justifyContent="center">
-                {recentBlogs.map((blog) => (
+                {[...recentBlogs].reverse().map((blog) => (
                     <Card key={blog.id} sx={{ width: 480, cursor: "pointer" }} onClick={() => navigate(`/blogs/${blog.slug}`)}>
                         <CardMedia component="img" height="140" image={blog.image} alt={blog.title} />
                         <CardContent>
