@@ -581,6 +581,62 @@ export const blogs = [
 
 
 
+  }, {
+    id: 7,
+    slug: "human-side-of-technology-2025",
+    title: "The Human Side of New Technology: Blending Innovation with Empathy",
+    description: "In a world of AI and biotechnology, discover how technology can be more human — designed with empathy, ethics, and heart.",
+    image: aiImage, // Replace with actual image import or URL
+    date: "2025-05-05",
+    tags: ["Technology", "Human-Centered Design", "Ethics in Tech", "AI", "Biotech", "Empathy", "Digital Wellbeing"],
+    content: `
+      <h2>From Cold Code to Warm Connections</h2>
+      <p>Technology used to be seen as cold, logical, and distant. But today's breakthroughs are different. They're not just about automation or data — they’re about connection. Whether it’s a voice assistant helping an elderly person feel less alone, or a wearable device detecting a heart issue before it becomes dangerous, modern tech is increasingly designed with empathy.</p>
+  
+      <h2>🌐 AI and Empathy</h2>
+      <p>Artificial Intelligence is no longer just about crunching numbers. With emotional AI (also called affective computing), machines are learning to read human facial expressions, tone of voice, and even body language.</p>
+      <p>Think about therapy bots like <strong>Woebot</strong>, which use cognitive behavioral techniques to offer comfort during anxiety or depression — not to replace human therapists, but to make mental health support more accessible.</p>
+      <p>AI is also making customer service more human. Natural Language Processing tools like ChatGPT are creating conversations that feel real and responsive. The goal? Not just to answer, but to understand.</p>
+  
+      <h2>🧬 Biotech and the Human Body</h2>
+      <p>Biotechnology is reshaping medicine with a human-first mindset. CRISPR gene editing offers hope for curing genetic diseases. AI-powered prosthetics are restoring independence to amputees.</p>
+      <p>Personalized medicine is also rising — where treatment is tailored to each person's genetics, environment, and lifestyle. It’s healthcare with heart: precise, personal, and compassionate.</p>
+  
+      <h2>🎯 The Rise of Humane Design</h2>
+      <p>In an age of endless screens and scrolling, "humane technology" has become a movement. Designers are focused on creating tech that respects our time, mental health, and focus.</p>
+      <ul>
+        <li>Apple’s “Screen Time” and Google’s “Digital Wellbeing” help users manage screen addiction.</li>
+        <li>Mindfulness apps like Headspace and Calm reduce stress through gentle tech.</li>
+      </ul>
+      <p>Human-centered design asks questions like: Does this tool enhance connection? Respect attention? Give people more control?</p>
+  
+      <h2>🤝 Human + Machine, Not Human vs. Machine</h2>
+      <p>The future isn't about replacing people — it's about empowering them. Pilots use AI for safer flights. Architects co-design with AI to create sustainable buildings.</p>
+      <p>The best innovation happens when human creativity meets machine efficiency.</p>
+  
+      <h2>⚠️ Challenges We Must Face — With Heart</h2>
+      <p>Technology isn't without risks: deepfakes, biased algorithms, and surveillance tech are major concerns. Ethical tech means asking:</p>
+      <ul>
+        <li>Is the AI model fair and transparent?</li>
+        <li>How are marginalized communities affected?</li>
+        <li>Who wins, and who gets left behind?</li>
+      </ul>
+      <p>Governments, companies, and individuals all share responsibility to ensure technology helps more than it harms.</p>
+  
+      <h2>🌟 A Future Where Humanity Leads</h2>
+      <p>Whether it’s VR, brain-computer interfaces, or nanotech, the real question is: can it help us live better lives?</p>
+      <ul>
+        <li>Can it help a blind person see again?</li>
+        <li>Reunite long-lost family?</li>
+        <li>Lift someone out of poverty?</li>
+      </ul>
+      <p>Success will be measured by how much technology enhances our humanity — not replaces it.</p>
+  
+      <h2>🚀 Final Thoughts</h2>
+      <p>Technology is no longer just a tool — it’s a partner in our journey. Guided by empathy, ethics, and a human touch, it can inspire us to create a better, more humane world.</p>
+      <p>So let’s write code with compassion. Let’s build not just smarter machines — but a future where humanity thrives.</p>
+    `
   }
+
 ];
 
