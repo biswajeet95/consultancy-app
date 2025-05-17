@@ -5,6 +5,7 @@ import aiImage from "../assets/images/5-AI-Advancements.jpg.jpeg";
 import webImage from "../assets/images/0x0.jpg.webp";
 import healthImage from "../assets/images/artificial-intelligence.jpg.jpg";
 import healthImg from "../assets/images/what-is-ai.jpg.jpg";
+import aiHumanTouchImage from "../assets/images/aiHumanTouchImage.jpg";
 
 export const blogs = [
   {
@@ -636,7 +637,58 @@ export const blogs = [
       <p>Technology is no longer just a tool — it’s a partner in our journey. Guided by empathy, ethics, and a human touch, it can inspire us to create a better, more humane world.</p>
       <p>So let’s write code with compassion. Let’s build not just smarter machines — but a future where humanity thrives.</p>
     `
+  }, {
+    id: 8,
+    slug: "future-tech-with-human-touch-2025",
+    title: "Embracing the Future: How New Technology is Shaping Our Lives with a Human Touch",
+    description: "Explore how new technology, from AI to health wearables, is transforming our lives by combining innovation with empathy, ethics, and a human touch.",
+    image: aiHumanTouchImage, // Replace with actual image import or URL
+    date: "2025-05-17",
+    tags: ["Technology", "Human-Centered Design", "AI", "Health Tech", "Empathy", "Ethical Innovation", "Future Trends"],
+    content: `
+      <h2>🌍 Introduction: The Rise of Human-Centered Technology</h2>
+      <p>In an age of relentless innovation, technology no longer sits quietly in the background. It breathes with us, learns from us, and—more than ever before—adapts to the nuances of what makes us human.</p>
+      <p>From artificial intelligence that understands our emotions to wearable devices that monitor our health, the future isn’t just about machines. It’s about us—how we feel, how we think, and how we live.</p>
+  
+      <h2>📱 The Human Side of Smart Tech</h2>
+      <p>Smartphones today are more than tools—they’re companions. They detect our stress levels, remind us to hydrate, and can even analyze a cough to suggest medical attention.</p>
+      <p>AI and machine learning are being refined not just for speed, but for empathy. Apps like ChatGPT are supporting mental health, assisting the elderly, and enhancing education for all learning styles.</p>
+  
+      <h2>❤️ Health Tech: When Machines Care</h2>
+      <p>Wearables have moved from trend to essential. They track your heartbeat, oxygen levels, and sleep—but now they also detect arrhythmias, monitor chronic diseases, and alert doctors in real time.</p>
+      <p>This isn’t just health tracking—it’s peace of mind, connection, and care, delivered through innovation.</p>
+  
+      <h2>🎨 AI and Creativity: When Machines Dream with Us</h2>
+      <p>Creativity is no longer solely human. Musicians collaborate with AI, writers brainstorm ideas, and artists use generative tools to push visual boundaries.</p>
+      <p>Even prosthetics now respond to neural signals, allowing users to control them with their minds. It's not replacement—it’s empowerment.</p>
+  
+      <h2>🏡 Everyday AI: Making Life Smoother</h2>
+      <p>From smart fridges that plan meals to AI assistants that schedule your day, tech is blending into our routines. And it’s becoming more inclusive—understanding regional accents, adapting for disabilities, and personalizing experiences.</p>
+  
+      <h2>⚖️ Ethics and Empathy in the Digital Age</h2>
+      <p>With great power comes great responsibility. As AI systems grow, we must address ethical questions:</p>
+      <ul>
+        <li>Are these tools transparent and unbiased?</li>
+        <li>Is privacy being respected?</li>
+        <li>Who benefits—and who’s left out?</li>
+      </ul>
+      <p>The answers aren’t easy, but they must be asked—with humanity in mind.</p>
+  
+      <h2>🚀 Looking Ahead: A Future Built Together</h2>
+      <p>The next era of innovation will blur the lines between tech and human experience:</p>
+      <ul>
+        <li>Smart cities reducing pollution</li>
+        <li>Precision medicine saving lives</li>
+        <li>AI connecting communities</li>
+      </ul>
+      <p>The best tech will always be the kind that understands people—not just data.</p>
+  
+      <h2>🌟 Final Thought</h2>
+      <p>Technology is no longer just circuitry and code—it’s about stories, relationships, and connection. As we move forward, let’s build tools that empower, inspire, and keep the human touch alive.</p>
+      <p>In the end, the future isn’t about machines. It’s about how those machines make us feel more human.</p>
+    `
   }
+
 
 ];
 
