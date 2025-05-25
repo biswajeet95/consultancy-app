@@ -6,7 +6,7 @@ import webImage from "../assets/images/0x0.jpg.webp";
 import healthImage from "../assets/images/artificial-intelligence.jpg.jpg";
 import healthImg from "../assets/images/what-is-ai.jpg.jpg";
 import aiHumanTouchImage from "../assets/images/aiHumanTouchImage.jpg";
-//import futureofbraincomputerinterfaces from "../assets/images/future-of-brain-computer-interfaces-2025.jpg";
+import futuretechnologies2025 from "../assets/images/futuretechnologies2025.jpg";
 import futureofbraincomputerinterfaces from "../assets/images/future-of-brain-computer-interfaces-2025.png";
 export const blogs = [
   {
@@ -689,14 +689,14 @@ export const blogs = [
       <p>In the end, the future isn’t about machines. It’s about how those machines make us feel more human.</p>
     `
   }, {
-  id: 9,
-  slug: "future-of-brain-computer-interfaces-2025",
-  title: "Thinking Beyond Touch: How Brain-Computer Interfaces Will Redefine the Human-Tech Connection",
-  description: "Explore the next big frontier in technology—Brain-Computer Interfaces. Learn how this revolutionary innovation is changing communication, healthcare, AI interaction, and the very definition of being human.",
-  image: futureofbraincomputerinterfaces, // Replace with actual image import or URL
-  date: "2025-05-21",
-  tags: ["Brain-Computer Interface", "BCI", "Future Technology", "AI", "Healthcare Innovation", "Human-AI Interaction", "Neurotechnology", "Ethical Tech"],
-  content: `
+    id: 9,
+    slug: "future-of-brain-computer-interfaces-2025",
+    title: "Thinking Beyond Touch: How Brain-Computer Interfaces Will Redefine the Human-Tech Connection",
+    description: "Explore the next big frontier in technology—Brain-Computer Interfaces. Learn how this revolutionary innovation is changing communication, healthcare, AI interaction, and the very definition of being human.",
+    image: futureofbraincomputerinterfaces, // Replace with actual image import or URL
+    date: "2025-05-21",
+    tags: ["Brain-Computer Interface", "BCI", "Future Technology", "AI", "Healthcare Innovation", "Human-AI Interaction", "Neurotechnology", "Ethical Tech"],
+    content: `
     <h2>🌟 Welcome to the Next Evolution of Technology</h2>
     <p>What if you could open your email, drive a car, or communicate a full sentence—without moving a finger? This isn’t a sci-fi dream anymore. The future is being wired into our biology through a groundbreaking innovation called <strong>Brain-Computer Interfaces (BCIs)</strong>.</p>
     <p>In 2025, BCIs are no longer just research lab projects. They're real, tested, and making their way into the medical field, the gaming industry, education, and even our daily routines. But beyond the circuits and signals lies something more profound—<strong>the human experience.</strong></p>
@@ -754,7 +754,75 @@ export const blogs = [
     <p>We’re entering a future where our minds may no longer be limited by speech, movement, or even devices. But as we build this brave new world, let’s ensure it’s one built not just on innovation—but on integrity, inclusivity, and compassion.</p>
     <p>The brain may be the interface, but the heart must always lead the way.</p>
   `
-}
+  }, {
+    id: 10,
+    slug: "technologies-to-learn-2025",
+    title: "Top 7 Future Technologies to Learn in 2025 for Career Growth & Innovation",
+    description: "Discover the most in-demand technologies to learn in 2025, including AI, Blockchain, Cloud Computing, AR/VR, and more. Stay ahead in your career with these essential digital skills and future trends.",
+    image: futuretechnologies2025, // Replace with actual image import or URL
+    date: "2025-05-25",
+    tags: ["Technology", "AI", "Blockchain", "Green Tech", "Cloud", "AR/VR", "Future Trends", "Education", "Digital Skills"],
+    content: `
+    <h2>🔮 The Future Is Now: Top Recent Technologies Everyone Should Learn in 2025</h2>
+    <p>Technology has become the beating heart of modern life. From the phone in your hand to the software managing electric cars, technology is no longer something we can choose to avoid. It’s around us, within us, and shaping the future.</p>
+    <p>But with so many new innovations emerging, it’s easy to feel overwhelmed. The truth is, <strong>you’re not too late</strong>. Whether you're a student, professional, or curious mind, the time to start learning is <strong>now</strong>.</p>
+
+    <h2>🧠 1. Artificial Intelligence (AI) & Machine Learning (ML)</h2>
+    <p>AI is no longer a buzzword. From personalized recommendations to AI writing tools, it’s shaping how we work and live.</p>
+    <ul>
+      <li><strong>Use Cases:</strong> Customer service bots, automated analytics, AI art/music.</li>
+      <li><strong>Get Started:</strong> Learn Python, try AI tools like ChatGPT, explore courses on Coursera or Khan Academy.</li>
+    </ul>
+
+    <h2>🌐 2. Web3 & Blockchain</h2>
+    <p>Blockchain isn’t just for crypto—it’s about decentralization, transparency, and ownership.</p>
+    <ul>
+      <li><strong>Use Cases:</strong> NFTs, decentralized finance (DeFi), smart contracts.</li>
+      <li><strong>Get Started:</strong> Learn about Ethereum, create wallets, take beginner blockchain courses on Udemy.</li>
+    </ul>
+
+    <h2>☁️ 3. Cloud Computing</h2>
+    <p>From startups to Netflix, everyone is in the cloud. It’s flexible, scalable, and saves money.</p>
+    <ul>
+      <li><strong>Use Cases:</strong> Google Drive, Zoom, AWS, Azure.</li>
+      <li><strong>Get Started:</strong> Use AWS Free Tier, learn basic deployments, explore SaaS/PaaS models.</li>
+    </ul>
+
+    <h2>🤖 4. Robotics & Automation</h2>
+    <p>Robots are no longer just in factories—they’re in homes, hospitals, and classrooms.</p>
+    <ul>
+      <li><strong>Use Cases:</strong> Robotic arms for disabled people, Roombas, robotic surgery.</li>
+      <li><strong>Get Started:</strong> Try Raspberry Pi or Arduino kits, learn Python or C++ for robotics.</li>
+    </ul>
+
+    <h2>🧬 5. Biotechnology & Health Tech</h2>
+    <p>Tech is helping us live longer, healthier lives—from DNA tests to wearables.</p>
+    <ul>
+      <li><strong>Use Cases:</strong> Smartwatches, genetic testing, AI diagnostics.</li>
+      <li><strong>Get Started:</strong> Explore platforms like TED or 23andMe, learn about bioinformatics.</li>
+    </ul>
+
+    <h2>🌱 6. Green Tech & Sustainability</h2>
+    <p>Climate change demands smart solutions. Green tech merges innovation with environmental care.</p>
+    <ul>
+      <li><strong>Use Cases:</strong> Solar panels, electric vehicles, smart homes.</li>
+      <li><strong>Get Started:</strong> Learn about sustainable living, explore eco-focused apps, follow UN SDG goals.</li>
+    </ul>
+
+    <h2>🕶️ 7. Augmented Reality (AR) & Virtual Reality (VR)</h2>
+    <p>The line between physical and digital is blurring. AR/VR is revolutionizing education, entertainment, and work.</p>
+    <ul>
+      <li><strong>Use Cases:</strong> Virtual classrooms, gaming, training simulations.</li>
+      <li><strong>Get Started:</strong> Use AR apps, try VR headsets, learn Unity or Unreal Engine.</li>
+    </ul>
+
+    <h2>📌 Final Thoughts</h2>
+    <p>You don’t need to master all of these technologies. Start small. Choose one that aligns with your interest or career goals.</p>
+    <p><em>Because the future isn’t just about machines. It’s about humans empowered by technology. The best time to start learning is now.</em></p>
+    <p>So, what will you explore first? Let us know and join the movement of curious minds shaping the future.</p>
+  `
+  }
+
 
 
 

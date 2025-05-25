@@ -58,7 +58,7 @@ const HeroSection = () => {
 
     if (isMobile) {
         containerHeight = '40vh';
-        imageHeight = '50vh';
+        imageHeight = '40vh';
         imageWidth = '100%';
         variant4font = '10px';
         variant6font = '8px';
