@@ -8,6 +8,7 @@ import healthImg from "../assets/images/what-is-ai.jpg.jpg";
 import aiHumanTouchImage from "../assets/images/aiHumanTouchImage.jpg";
 import futuretechnologies2025 from "../assets/images/futuretechnologies2025.jpg";
 import futureofbraincomputerinterfaces from "../assets/images/future-of-brain-computer-interfaces-2025.png";
+import usHumanTech2025 from "../assets/images/usHumanTech2025.jpg";
 export const blogs = [
   {
     id: 1,
@@ -821,7 +822,100 @@ export const blogs = [
     <p><em>Because the future isn’t just about machines. It’s about humans empowered by technology. The best time to start learning is now.</em></p>
     <p>So, what will you explore first? Let us know and join the movement of curious minds shaping the future.</p>
   `
-  }
+  }, {
+  id: 11,
+  slug: "human-centered-tech-us-2025",
+  title: "The Human Side of Innovation: How the US is Shaping a Future Where Technology Cares",
+  description: "Explore groundbreaking human-centered technologies developed in the US in 2025—from biometric identity to emotionally intelligent robots—designed to put people first in the AI age.",
+  image: usHumanTech2025, // Replace with the actual image import or path
+  date: "2025-05-29",
+  tags: [
+    "Human-Centered Technology", 
+    "AI Ethics", 
+    "Future Tech", 
+    "US Innovation", 
+    "Emotional AI", 
+    "Calm Technology", 
+    "Smart Glasses", 
+    "Neuromorphic Chips"
+  ],
+  content: `
+    <h2>🌟 Introduction: A New Era of Human-Centered Technology in the US</h2>
+    <p>In a world dominated by concerns of AI replacing jobs, the United States is leading a transformative shift—building technologies that enhance empathy, identity, connection, and mental well-being. This blog explores the most impactful innovations of 2025, shaping a future where tech empowers, not replaces, humanity.</p>
+
+    <h2>🔐 1. The Orb and World ID: Securing Digital Identity in the AI Era</h2>
+    <p>Sam Altman’s Orb scans irises to issue a <strong>World ID</strong>, verifying that users are real humans—a crucial tool in combating bots, deepfakes, and digital fraud.</p>
+    <h3>Why It Matters</h3>
+    <ul>
+      <li>No biometric data is stored—privacy is protected.</li>
+      <li>Worldcoin rewards users with crypto, symbolizing recognition and value in a machine-dominated economy.</li>
+    </ul>
+
+    <h2>🤖 2. Ameca: Emotionally Intelligent Robots with Human Expressions</h2>
+    <p>Ameca by Engineered Arts is the most humanlike robot yet. It mimics facial expressions, holds conversations, and responds with emotion-aware gestures.</p>
+    <h3>Real-World Uses</h3>
+    <ul>
+      <li>Deployed in airports, exhibitions, and service spaces for friendly interactions.</li>
+      <li>Represents a shift from task-based automation to emotionally intelligent engagement.</li>
+    </ul>
+
+    <h2>🧘‍♀️ 3. Calm Technology: Digital Tools That Respect Your Focus</h2>
+    <p>Calm tech shifts away from noisy alerts to subtle cues. Devices notify users through glows, taps, and silent signals—supporting mental clarity.</p>
+    <h3>Where It’s Used</h3>
+    <ul>
+      <li>Wearables, smart home devices, and wellness apps.</li>
+      <li>Designed to fit into daily life without overwhelming it.</li>
+    </ul>
+
+    <h2>🌱 4. Living Intelligence: Bio-Inspired Adaptive Technology</h2>
+    <p>Living Intelligence merges AI with biology, allowing systems to grow, adapt, and heal like living organisms.</p>
+    <h3>Breakthrough Applications</h3>
+    <ul>
+      <li>Smart prosthetics that adjust in real-time.</li>
+      <li>Self-optimizing agriculture systems tailored to climate and soil.</li>
+    </ul>
+
+    <h2>😌 5. Affective Computing: Machines That Understand Human Emotion</h2>
+    <p>Affective computing allows machines to detect emotions via facial cues, speech patterns, and heart rate—creating tech that reacts with empathy.</p>
+    <h3>Impactful Use Cases</h3>
+    <ul>
+      <li>Healthcare: Detecting mental distress in patients.</li>
+      <li>Automotive: Warning drivers of fatigue or stress.</li>
+      <li>Education: Measuring student engagement in e-learning.</li>
+    </ul>
+
+    <h2>🕶️ 6. Smart Glasses 2025: Augmenting Reality Without Disconnection</h2>
+    <p>With Apple and Meta leading the way, smart glasses now offer subtle digital overlays—providing helpful information while keeping users engaged with the real world.</p>
+    <h3>Why They Stand Out</h3>
+    <ul>
+      <li>Translate signs, give navigation tips, and offer reminders—all hands-free.</li>
+      <li>Augmentation over isolation—helping users stay present.</li>
+    </ul>
+
+    <h2>🧠 7. Neuromorphic Chips: Brain-Inspired Computing for the Future</h2>
+    <p>These chips replicate the brain’s neural networks, enabling low-power, high-speed data processing for real-time AI applications.</p>
+    <h3>Where They’re Used</h3>
+    <ul>
+      <li>Autonomous vehicles and drones</li>
+      <li>AI-enhanced surgeries</li>
+      <li>Cybersecurity systems and real-time language translation</li>
+    </ul>
+
+    <h2>⚖️ 8. AI Ethics and Responsible Innovation in the US</h2>
+    <p>Alongside innovation, the U.S. is emphasizing AI ethics. Governments, ethicists, and even the Vatican are weighing in on guiding principles for responsible tech.</p>
+    <h3>What’s Being Done</h3>
+    <ul>
+      <li>Developers are embedding ethical frameworks directly into software and hardware.</li>
+      <li>Experts urge tech companies to design for real connection—not artificial intimacy.</li>
+    </ul>
+
+    <h2>❤️ Conclusion: A Human-First Future Powered by Ethical Technology</h2>
+    <p>From digital identity protection to emotion-aware robotics, the U.S. is proving that future tech doesn’t have to dehumanize—it can amplify what makes us human.</p>
+    <p><strong>2025 is not just the year of AI. It’s the year of AI that cares.</strong></p>
+    <p><em>Because the best technology doesn’t just think—it listens, feels, and connects.</em></p>
+  `
+}
+
 
 
 
