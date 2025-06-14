@@ -10,6 +10,7 @@ import futuretechnologies2025 from "../assets/images/futuretechnologies2025.jpg"
 import futureofbraincomputerinterfaces from "../assets/images/future-of-brain-computer-interfaces-2025.png";
 import usHumanTech2025 from "../assets/images/usHumanTech2025.jpg";
 import japanTech from "../assets/images/japanTech.jpg";
+import appleWWDC from "../assets/images/appleWWDC.jpg";
 export const blogs = [
   {
     id: 1,
@@ -824,23 +825,23 @@ export const blogs = [
     <p>So, what will you explore first? Let us know and join the movement of curious minds shaping the future.</p>
   `
   }, {
-  id: 11,
-  slug: "human-centered-tech-us-2025",
-  title: "The Human Side of Innovation: How the US is Shaping a Future Where Technology Cares",
-  description: "Explore groundbreaking human-centered technologies developed in the US in 2025—from biometric identity to emotionally intelligent robots—designed to put people first in the AI age.",
-  image: usHumanTech2025, // Replace with the actual image import or path
-  date: "2025-05-29",
-  tags: [
-    "Human-Centered Technology", 
-    "AI Ethics", 
-    "Future Tech", 
-    "US Innovation", 
-    "Emotional AI", 
-    "Calm Technology", 
-    "Smart Glasses", 
-    "Neuromorphic Chips"
-  ],
-  content: `
+    id: 11,
+    slug: "human-centered-tech-us-2025",
+    title: "The Human Side of Innovation: How the US is Shaping a Future Where Technology Cares",
+    description: "Explore groundbreaking human-centered technologies developed in the US in 2025—from biometric identity to emotionally intelligent robots—designed to put people first in the AI age.",
+    image: usHumanTech2025, // Replace with the actual image import or path
+    date: "2025-05-29",
+    tags: [
+      "Human-Centered Technology",
+      "AI Ethics",
+      "Future Tech",
+      "US Innovation",
+      "Emotional AI",
+      "Calm Technology",
+      "Smart Glasses",
+      "Neuromorphic Chips"
+    ],
+    content: `
     <h2>🌟 Introduction: A New Era of Human-Centered Technology in the US</h2>
     <p>In a world dominated by concerns of AI replacing jobs, the United States is leading a transformative shift—building technologies that enhance empathy, identity, connection, and mental well-being. This blog explores the most impactful innovations of 2025, shaping a future where tech empowers, not replaces, humanity.</p>
 
@@ -915,26 +916,26 @@ export const blogs = [
     <p><strong>2025 is not just the year of AI. It’s the year of AI that cares.</strong></p>
     <p><em>Because the best technology doesn’t just think—it listens, feels, and connects.</em></p>
   `
-} , {
+  }, {
 
 
-  id: 12,
-  slug: "japan-upcoming-technology-2025",
-  title: "The Human Touch of Innovation: Japan’s Upcoming Technologies Redefining the Future",
-  description: "Discover how Japan’s upcoming technologies in 2025—emotional robots, smart cities, and green energy—are built with empathy, care, and human connection at their core.",
-  image: japanTech, // Replace with your actual image import or path
-  date: "2025-06-07",
-  tags: [
-    "Japan Innovation",
-    "Emotional AI",
-    "Smart Cities",
-    "Green Tech",
-    "Human-Centered Design",
-    "Future Technology",
-    "Woven City",
-    "AI Companions"
-  ],
-  content: `
+    id: 12,
+    slug: "japan-upcoming-technology-2025",
+    title: "The Human Touch of Innovation: Japan’s Upcoming Technologies Redefining the Future",
+    description: "Discover how Japan’s upcoming technologies in 2025—emotional robots, smart cities, and green energy—are built with empathy, care, and human connection at their core.",
+    image: japanTech, // Replace with your actual image import or path
+    date: "2025-06-07",
+    tags: [
+      "Japan Innovation",
+      "Emotional AI",
+      "Smart Cities",
+      "Green Tech",
+      "Human-Centered Design",
+      "Future Technology",
+      "Woven City",
+      "AI Companions"
+    ],
+    content: `
     <h2>🌸 Introduction: Japan’s Future Shaped by Heart and Harmony</h2>
     <p>When ancient temples stand beside robotic labs, you know you're in Japan. In 2025, Japan is not just leading in innovation—it's redefining it with care. This blog explores how Japan’s upcoming technologies combine cutting-edge science with human values, putting empathy, well-being, and connection at the forefront.</p>
 
@@ -991,7 +992,69 @@ export const blogs = [
     <p><strong>In Japan, the future isn't cold and metallic—it’s warm, inclusive, and deeply human.</strong></p>
     <p><em>Because when technology listens, connects, and loves, it doesn’t replace us—it completes us.</em></p>
   `
-}
+  }, {
+    id: 13,
+    slug: "apple-wwdc-2025-highlights",
+    title: "Apple’s WWDC 2025 Highlights: How Apple Is Shaping the Future of AI, Devices, and Experiences",
+    description: "Explore all the key announcements from Apple’s WWDC 2025—from Apple Intelligence in iOS 19 to visionOS 3 and macOS Sequoia—showing how Apple blends AI with privacy and human-centered design.",
+    image: appleWWDC, // Replace with your actual image import or path
+    date: "2025-06-14",
+    tags: [
+      "Apple WWDC",
+      "iOS 19",
+      "Apple Intelligence",
+      "visionOS 3",
+      "macOS Sequoia",
+      "watchOS 12",
+      "AI Privacy",
+      "Apple Innovation",
+      "Future Technology"
+    ],
+    content: `
+    <h2>🌟 The AI Revolution: Apple Intelligence Becomes a Reality</h2>
+    <p>Apple’s headline this year was clear: <strong>AI is no longer just in the background—it’s woven into the very fabric of iOS, macOS, and visionOS.</strong></p>
+    <p>Imagine your iPhone not just reacting, but <em>understanding</em>. iOS 19 introduces <strong>Apple Intelligence</strong>, a suite of AI tools designed to make your interactions smoother, smarter, and more personal.</p>
+    <ul>
+      <li><strong>New Siri</strong> — More natural in conversation, context-aware, and integrated deeply into your apps.</li>
+      <li><strong>Writing Tools</strong> — AI assistance for rewriting, summarizing, and proofreading across apps.</li>
+      <li><strong>Photo and Video Magic</strong> — AI-powered memory movies, distraction removal, and one-tap highlight reels.</li>
+    </ul>
+    <p>Importantly, Apple emphasized <strong>privacy-first AI</strong>, ensuring your data stays secure and on-device or in Apple’s private cloud.</p>
+
+    <h2>🕶 visionOS 3: Mixed Reality That Feels Real</h2>
+    <p>visionOS 3 enhances the Vision Pro experience with:</p>
+    <ul>
+      <li>More intuitive hand and eye tracking for seamless control.</li>
+      <li>Shared virtual spaces for collaboration and connection.</li>
+      <li>New apps for fitness, spatial gaming, and productivity.</li>
+    </ul>
+
+    <h2>🖥 macOS Sequoia: Seamless Integration with AI</h2>
+    <p>macOS Sequoia brings desktop users into the AI era with:</p>
+    <ul>
+      <li>System-wide AI writing and search tools.</li>
+      <li>iPhone mirroring directly on Mac screens.</li>
+      <li>Smarter window management and multitasking features.</li>
+    </ul>
+
+    <h2>⌚ watchOS 12: Health at the Forefront</h2>
+    <p>Apple’s wearable updates focus on well-being:</p>
+    <ul>
+      <li>Advanced heart health monitoring and alerts.</li>
+      <li>AI-powered mindfulness and stress tracking.</li>
+      <li>Personalized activity goals tailored to your health journey.</li>
+    </ul>
+
+    <h2>🤖 Why WWDC 2025 Matters to All of Us</h2>
+    <p>What stood out this year was Apple’s <strong>human-centric approach</strong>. AI isn’t added for hype—it’s integrated to enrich lives, respect privacy, and enhance daily interactions.</p>
+    <p>We’re moving towards a world where devices don’t just serve—they <em>understand</em>. And Apple’s vision brings that future closer than ever.</p>
+
+    <h2>🌱 Final Thoughts</h2>
+    <p>Whether you’re a developer, a tech lover, or simply an Apple user, WWDC 2025 showed a company focused on building technology that helps, connects, and protects us. It’s not just innovation—it’s innovation with intention.</p>
+    <p><strong>What are you most excited about from Apple’s WWDC 2025? Share your thoughts!</strong></p>
+  `
+  }
+
 
 
 
