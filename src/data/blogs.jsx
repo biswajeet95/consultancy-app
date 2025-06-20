@@ -11,6 +11,7 @@ import futureofbraincomputerinterfaces from "../assets/images/future-of-brain-co
 import usHumanTech2025 from "../assets/images/usHumanTech2025.jpg";
 import japanTech from "../assets/images/japanTech.jpg";
 import appleWWDC from "../assets/images/appleWWDC.jpg";
+import cybersecurityAI from "../assets/images/cybersecurityAI.jpg";
 export const blogs = [
   {
     id: 1,
@@ -1053,7 +1054,67 @@ export const blogs = [
     <p>Whether you’re a developer, a tech lover, or simply an Apple user, WWDC 2025 showed a company focused on building technology that helps, connects, and protects us. It’s not just innovation—it’s innovation with intention.</p>
     <p><strong>What are you most excited about from Apple’s WWDC 2025? Share your thoughts!</strong></p>
   `
-  }
+  },  {
+  id: 14,
+  slug: "cybersecurity-in-ai-era",
+  title: "Cybersecurity in an AI Era: Protecting Our Digital Future",
+  description: "Explore how cybersecurity is evolving in the age of AI, from defending against deepfakes to building trust in a machine-driven world. Learn how AI shapes both threats and protections in the digital age.",
+  image: cybersecurityAI, // Replace with your actual image import or path
+  date: "2025-06-20",
+  tags: [
+    "Cybersecurity",
+    "Artificial Intelligence",
+    "AI Threats",
+    "AI Defense",
+    "Deepfake Scams",
+    "Digital Privacy",
+    "AI Ethics",
+    "Future of Technology",
+    "Online Safety"
+  ],
+  content: `
+    <h2>🌟 The Rise of AI: A Double-Edged Sword</h2>
+    <p>AI helps us in incredible ways. It powers spam filters that clean our inboxes, detects fraud in banking, and even helps doctors diagnose diseases earlier. AI systems can spot patterns in huge amounts of data that humans would miss.</p>
+    <p>But the same technology that helps can also hurt. Hackers are using AI too — to create smarter malware, trick people with deepfakes, and automate cyberattacks that can bring down systems in seconds. AI is not just a tool for good or bad — <strong>it’s a tool</strong>. How we use it determines the outcome.</p>
+
+    <h2>💻 How Cybersecurity Is Changing in the AI Era</h2>
+    <ul>
+      <li><strong>Threats evolve faster</strong> — AI can help attackers find vulnerabilities quicker than ever before.</li>
+      <li><strong>Attacks are harder to spot</strong> — Deepfake videos and AI-written phishing emails look shockingly real.</li>
+      <li><strong>Security must be smarter</strong> — Old methods aren’t enough. We need cybersecurity that can think, learn, and adapt like AI attackers do.</li>
+    </ul>
+
+    <h2>🛡 AI as a Defender: How It Protects Us</h2>
+    <ul>
+      <li><strong>AI-powered threat detection</strong> — Monitors millions of events in real-time, spotting unusual activity and stopping attacks early.</li>
+      <li><strong>Behavioral analysis</strong> — Learns what “normal” looks like and raises alarms for anything unusual.</li>
+      <li><strong>Automated response systems</strong> — Can isolate threats within seconds, without waiting for human approval.</li>
+    </ul>
+
+    <h2>⚠ Real Dangers: What We Must Watch Out For</h2>
+    <ul>
+      <li>Deepfake scams that can steal identities or ruin reputations.</li>
+      <li>AI-powered phishing that sounds perfectly human.</li>
+      <li>Data poisoning where hackers feed false data to AI models.</li>
+      <li>Security teams struggling to keep up with fast-evolving AI threats.</li>
+    </ul>
+
+    <h2>🤖 How We Can Stay Safe</h2>
+    <ul>
+      <li><strong>Stay informed</strong> — Know the risks and teach others about AI-driven threats.</li>
+      <li><strong>Use AI-powered security tools</strong> — Choose advanced security that can learn and adapt.</li>
+      <li><strong>Don’t rely only on tech</strong> — Human oversight, awareness, and ethics are essential.</li>
+      <li><strong>Support smart regulations</strong> — Encourage governments to create policies that balance innovation and security.</li>
+    </ul>
+
+    <h2>🌍 A Shared Responsibility</h2>
+    <p>Cybersecurity in the AI era isn’t just for experts — it’s everyone’s job. Whether you’re a student, a business owner, or a parent, we all have a role in protecting our digital world. Together, we can make sure AI stays a force for good.</p>
+
+    <h2>🌱 Final Thoughts</h2>
+    <p>The AI revolution is here, and with it comes both great promise and serious risks. By combining AI’s power with human care, we can create a safer, smarter, and more connected future. <strong>What’s your take on AI and cybersecurity? Share your thoughts!</strong></p>
+  `
+}
+
 
 
 
