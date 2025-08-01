@@ -16,7 +16,8 @@ import cybersecurityAIprogram from "../assets/images/cybersecurityAIprogram.jpg"
 import semiconductorStockImage from "../assets/images/semiconductorStockImage.jpg";
 import quantumComputingImage from "../assets/images/quantumComputingImage.jpg";
 import aiBoomImage from "../assets/images/aiBoomImage.jpg";
-import genZTechImage from "../assets/images/genZTechImage.jpg" ;
+import genZTechImage from "../assets/images/genZTechImage.jpg";
+import generativeAiFuture from "../assets/images/generative-ai-future.jpg";
 export const blogs = [
   {
     id: 1,
@@ -1357,25 +1358,25 @@ export const blogs = [
     <p><strong>Disclaimer:</strong> This blog is for informational purposes only and should not be considered scientific advice.</p>
   `
   }, {
-  id: 18,
-  slug: "ai-boom-generative-agentic",
-  title: "The AI Boom – Generative & Agentic AI",
-  description: "Explore how Generative and Agentic AI are reshaping creativity, decision-making, and human potential in our everyday lives and industries.",
-  image: aiBoomImage, // Replace with your actual image path or import
-  date: "2025-07-19",
-  tags: [
-    "AI",
-    "Generative AI",
-    "Agentic AI",
-    "Future Tech",
-    "OpenAI",
-    "AutoGPT",
-    "Artificial Intelligence",
-    "Automation",
-    "ChatGPT",
-    "AI Assistants"
-  ],
-  content: `
+    id: 18,
+    slug: "ai-boom-generative-agentic",
+    title: "The AI Boom – Generative & Agentic AI",
+    description: "Explore how Generative and Agentic AI are reshaping creativity, decision-making, and human potential in our everyday lives and industries.",
+    image: aiBoomImage, // Replace with your actual image path or import
+    date: "2025-07-19",
+    tags: [
+      "AI",
+      "Generative AI",
+      "Agentic AI",
+      "Future Tech",
+      "OpenAI",
+      "AutoGPT",
+      "Artificial Intelligence",
+      "Automation",
+      "ChatGPT",
+      "AI Assistants"
+    ],
+    content: `
   <h2>💥 The AI Boom – Generative & Agentic AI</h2>
   <p>We’re living in the middle of a technological explosion — and it’s not just any innovation. This one talks, writes, paints, plans, and thinks. Yes, we're talking about the rise of AI — specifically, <strong>Generative AI</strong> and <strong>Agentic AI</strong>. These two branches of artificial intelligence are rapidly changing how we create, communicate, and even how we work and think.</p>
 
@@ -1448,15 +1449,15 @@ export const blogs = [
 
   <p><strong>Disclaimer:</strong> This blog is for educational purposes only and reflects current trends as of July 2025.</p>
   `
-},{
-  id: 19,
-  slug: "how-tech-is-shaping-gen-z-behavior",
-  title: "How Tech Is Shaping Gen Z Behavior: A Deep Dive Into the Digital Generation",
-  description: "Explore how technology is influencing Gen Z's relationships, mental health, education, work, and identity in the digital age with a human touch.",
-  image: genZTechImage, // Replace with your actual image path or import
-  date: "2025-07-27",
-  tags: ["Gen Z", "Technology", "Digital Behavior", "Tech Trends", "Mental Health", "Education"],
-  content: `
+  }, {
+    id: 19,
+    slug: "how-tech-is-shaping-gen-z-behavior",
+    title: "How Tech Is Shaping Gen Z Behavior: A Deep Dive Into the Digital Generation",
+    description: "Explore how technology is influencing Gen Z's relationships, mental health, education, work, and identity in the digital age with a human touch.",
+    image: genZTechImage, // Replace with your actual image path or import
+    date: "2025-07-27",
+    tags: ["Gen Z", "Technology", "Digital Behavior", "Tech Trends", "Mental Health", "Education"],
+    content: `
     <p>If you've ever watched a Gen Zer scroll through five apps in under 30 seconds, film a TikTok while sipping a matcha latte, or use AI to help with their homework, you've witnessed a generation raised by technology. While every generation has had its own defining innovations—think boomers with the TV, millennials with the internet—<strong>Gen Z is the first true digital-native generation</strong>, born into a world where tech isn't just a tool, it's a way of life.</p>
 
     <p>But how exactly is technology shaping Gen Z’s behavior? Is it all just viral dances and emoji-laden texts, or is there something deeper going on?</p>
@@ -1526,17 +1527,71 @@ export const blogs = [
 
     <p><em>Are you part of Gen Z or raising one? Share your experience in the comments—I’d love to hear how tech is influencing your world!</em></p>
   `
-}
+  }, {
+    id: 1,
+    slug: "future-of-generative-ai-2025-chatgpt-sora-gemini-explained",
+    title: "Future of Generative AI in 2025: ChatGPT, Sora 2 & Google Gemini Explained",
+    description: "Discover the future of generative AI in 2025 with ChatGPT, Sora 2, and Google Gemini. Learn how these powerful AI tools are transforming creativity, productivity, and innovation responsibly.",
+    image: generativeAiFuture,
+    date: "2025-08-01",
+    tags: ["AI", "Generative AI", "ChatGPT", "Sora", "Google Gemini", "Future Tech"],
+    content: `
+      <h2>🌐 Emergence of a New Creative Era</h2>
+      <h3>ChatGPT: Your Conversational Muse</h3>
+      <p>In 2025, ChatGPT remains a creative powerhouse for writing, brainstorming, and simulating conversations. 
+      It excels at structuring content and supporting storytelling, making it a top choice for bloggers, educators, and creators.</p>
 
+      <h3>Google Gemini: The Multimodal Scholar</h3>
+      <p>Gemini stands out for its complex reasoning and seamless integration of text, images, and audio. 
+      Variants like Gemini 2.5 Pro and Flash enhance voice and image analysis, supporting real-time tasks and enterprise workflows.</p>
 
+      <h3>Sora & Sora 2: Text-to-Video for All</h3>
+      <p>OpenAI’s Sora allows anyone to create 20-second 1080p videos directly from text. 
+      With the upcoming Sora 2, we can expect better realism, audio sync, and longer durations, challenging Google’s Veo 3 in text-to-video innovation.</p>
 
+      <h2>🔎 Accelerating Market Trends</h2>
+      <h3>Growth & Investment</h3>
+      <p>Global generative AI spending is expected to reach <strong>$644 billion in 2025</strong>, 
+      growing at over 40% annually through 2030. Private investment in 2024 hit $33.9 billion, 
+      signaling strong industry confidence.</p>
 
+      <h3>Adoption & Reach</h3>
+      <p>Approximately 40% of U.S. consumers used a generative AI tool in the last 30 days. 
+      ChatGPT leads with 46% usage, Gemini at 37%, and Copilot at 25%.</p>
 
+      <h2>🧠 What’s Next: Agentic AI & Real‑World Applications</h2>
+      <h3>The Agentic Paradigm Shift</h3>
+      <p>2025 introduces agentic AI systems—tools that can plan and execute semi-autonomous tasks. 
+      Gemini leads this shift, and similar systems are emerging across industries.</p>
 
+      <h3>Integration in Everyday Tools</h3>
+      <p>Expect deeper AI integration in apps like Google Docs, Android, and video editors. 
+      Sora and Gemini are already reshaping creative and technical workflows.</p>
 
+      <h3>Responsible AI & Education</h3>
+      <p>Platforms like ChatGPT Study Mode promote learning and ethical use, while developers work to mitigate bias, 
+      copyright issues, and environmental concerns.</p>
 
+      <h2>✍️ Human Touch: Stories That Bridge Innovation & Experience</h2>
+      <p>Imagine a filmmaker in Mumbai using Sora for rapid ad concepts, or a teacher in Bhubaneswar 
+      engaging students with AI-powered study tools. These stories reflect AI’s real-world impact.</p>
 
+      <h2>⚠️ Balancing Excitement with Ethics</h2>
+      <p>Generative AI carries risks—high energy use, carbon footprint, and potential misuse. 
+      Responsible innovation is essential for sustainable adoption.</p>
 
+      <h2>✅ Key Takeaways</h2>
+      <ul>
+        <li>ChatGPT leads in creativity, Gemini in reasoning, Sora in video generation.</li>
+        <li>Global generative AI adoption is rising fast, with massive investment growth.</li>
+        <li>Agentic AI and deeper integration will define the next era.</li>
+        <li>Ethical considerations and environmental impact remain critical.</li>
+      </ul>
+
+      <p>The future of generative AI is about collaboration—where humans and AI 
+      create together responsibly, creatively, and effectively.</p>
+    `
+  }
 
 
 ];
