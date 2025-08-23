@@ -20,6 +20,7 @@ import genZTechImage from "../assets/images/genZTechImage.jpg";
 import generativeAiFuture from "../assets/images/generative-ai-future.jpg";
 import aiContentCreation from "../assets/images/aiContentCreation.jpg";
 import aiAgentsFuture from "../assets/images/aiAgentsFuture.jpg";
+import openSourceVsProprietary from "../assets/images/openSourceVsProprietary.jpg"
 export const blogs = [
   {
     id: 1,
@@ -1594,14 +1595,14 @@ export const blogs = [
       create together responsibly, creatively, and effectively.</p>
     `
   }, {
-  id: 21,
-  slug: "how-ai-is-revolutionizing-content-creation",
-  title: "How AI is Revolutionizing Content Creation: Blogs, Videos, and Digital Art",
-  description: "Explore how AI is transforming blogs, videos, and digital art. Learn how creators can use AI tools to work faster, smarter, and more creatively while keeping the human touch.",
-  image: aiContentCreation, // Replace with your imported image variable
-  date: "2025-08-11",
-  tags: ["AI", "Content Creation", "Blogging", "Video Editing", "Digital Art"],
-  content: `
+    id: 21,
+    slug: "how-ai-is-revolutionizing-content-creation",
+    title: "How AI is Revolutionizing Content Creation: Blogs, Videos, and Digital Art",
+    description: "Explore how AI is transforming blogs, videos, and digital art. Learn how creators can use AI tools to work faster, smarter, and more creatively while keeping the human touch.",
+    image: aiContentCreation, // Replace with your imported image variable
+    date: "2025-08-11",
+    tags: ["AI", "Content Creation", "Blogging", "Video Editing", "Digital Art"],
+    content: `
     <h2>🚀 The Creative Partnership Between Humans and AI</h2>
     <p>The world of content creation is evolving rapidly, and Artificial Intelligence (AI) is leading the charge. 
     From blog writing to producing videos and crafting digital art, AI is not replacing human creativity—it’s enhancing it. 
@@ -1658,15 +1659,15 @@ export const blogs = [
     <p>The future of content creation is not about choosing between AI and humans—it’s about combining their strengths to create 
     something truly extraordinary.</p>
   `
-},{
-  id: 22,
-  slug: "future-of-ai-agents-and-personal-assistants-2025",
-  title: "Future of AI Agents and Personal Assistants in 2025: What’s Next?",
-  description: "Discover how AI agents and personal assistants are evolving in 2025 with hyper-personalization, emotional intelligence, and smarter decision-making. Explore their impact on daily life and work.",
-  image: aiAgentsFuture, // Replace with your imported image variable
-  date: "2025-08-17",
-  tags: ["AI", "Personal Assistants", "Technology Trends", "Future of Work", "AI Agents"],
-  content: `
+  }, {
+    id: 22,
+    slug: "future-of-ai-agents-and-personal-assistants-2025",
+    title: "Future of AI Agents and Personal Assistants in 2025: What’s Next?",
+    description: "Discover how AI agents and personal assistants are evolving in 2025 with hyper-personalization, emotional intelligence, and smarter decision-making. Explore their impact on daily life and work.",
+    image: aiAgentsFuture, // Replace with your imported image variable
+    date: "2025-08-17",
+    tags: ["AI", "Personal Assistants", "Technology Trends", "Future of Work", "AI Agents"],
+    content: `
     <h2>🤖 What Are AI Agents and Personal Assistants?</h2>
     <p>Before diving into the future, let’s clear up the basics.</p>
     <ul>
@@ -1719,7 +1720,125 @@ export const blogs = [
       <li>The goal of AI is not replacement—but empowerment.</li>
     </ul>
   `
-}
+  }, {
+    id: 23,
+    slug: "open-source-ai-vs-proprietary-ai",
+    title: "Open Source AI vs Proprietary AI: Key Differences, Pros & Cons",
+    description: "Explore the differences between Open Source AI and Proprietary AI. Learn the pros, cons, and which option is best for students, startups, enterprises, and developers.",
+    image: openSourceVsProprietary, // Replace with your imported image variable
+    date: "2025-08-23",
+    tags: ["AI", "Open Source", "Proprietary AI", "Technology", "Future of AI"],
+    content: `
+    <h2>🤖 What is Open Source AI?</h2>
+    <p>Open Source AI refers to frameworks, tools, and models that are free to use, modify, and distribute. They are transparent, community-driven, and highly customizable.</p>
+    <ul>
+      <li><strong>Examples:</strong> TensorFlow, PyTorch, Hugging Face, Stable Diffusion</li>
+      <li><strong>Key Traits:</strong> Free, transparent, customizable, and supported by global communities</li>
+    </ul>
+
+    <h2>🔒 What is Proprietary AI?</h2>
+    <p>Proprietary AI refers to AI systems owned and controlled by companies, often accessible through paid APIs or licenses.</p>
+    <ul>
+      <li><strong>Examples:</strong> OpenAI’s GPT models, Google Cloud AI, Microsoft Azure AI, Anthropic’s Claude</li>
+      <li><strong>Key Traits:</strong> Closed-source, subscription-based, high-performance, and enterprise-ready</li>
+    </ul>
+
+    <h2>📊 Key Differences</h2>
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Open Source AI</th>
+        <th>Proprietary AI</th>
+      </tr>
+      <tr>
+        <td>Accessibility</td>
+        <td>Free, available to all</td>
+        <td>Paid, limited access</td>
+      </tr>
+      <tr>
+        <td>Transparency</td>
+        <td>Full visibility into code and models</td>
+        <td>Closed, black-box systems</td>
+      </tr>
+      <tr>
+        <td>Customization</td>
+        <td>Highly customizable</td>
+        <td>Limited customization</td>
+      </tr>
+      <tr>
+        <td>Performance</td>
+        <td>Depends on expertise & setup</td>
+        <td>Optimized for enterprise use</td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td>Community-driven help</td>
+        <td>Professional enterprise support</td>
+      </tr>
+      <tr>
+        <td>Cost</td>
+        <td>Free to start, infra costs later</td>
+        <td>Recurring subscription fees</td>
+      </tr>
+    </table>
+
+    <h2>✅ Pros & Cons of Open Source AI</h2>
+    <h3>Pros</h3>
+    <ul>
+      <li>Free and accessible for everyone</li>
+      <li>Encourages innovation and experimentation</li>
+      <li>Supported by global developer communities</li>
+      <li>Transparent and auditable</li>
+    </ul>
+    <h3>Cons</h3>
+    <ul>
+      <li>Requires technical expertise</li>
+      <li>No guaranteed support</li>
+      <li>Large models need powerful hardware</li>
+    </ul>
+
+    <h2>✅ Pros & Cons of Proprietary AI</h2>
+    <h3>Pros</h3>
+    <ul>
+      <li>Ready-to-use with no training required</li>
+      <li>High performance and reliability</li>
+      <li>Enterprise support with security and updates</li>
+      <li>Saves time and resources</li>
+    </ul>
+    <h3>Cons</h3>
+    <ul>
+      <li>Can be expensive</li>
+      <li>Vendor lock-in risk</li>
+      <li>Lack of transparency</li>
+      <li>Limited customization options</li>
+    </ul>
+
+    <h2>⚖️ Which One Should You Choose?</h2>
+    <ul>
+      <li><strong>Students & Researchers:</strong> Open Source AI for learning and experimentation</li>
+      <li><strong>Startups:</strong> Open Source for early stages, Proprietary AI for scaling</li>
+      <li><strong>Enterprises:</strong> Proprietary AI for security, support, and scalability</li>
+      <li><strong>Freelancers/Developers:</strong> Hybrid approach—use open source for prototyping and proprietary APIs for deployment</li>
+    </ul>
+
+    <h2>🔮 The Future: A Hybrid World</h2>
+    <p>The real future is not Open Source <em>vs</em> Proprietary AI but rather <strong>Open Source + Proprietary AI</strong>. 
+    Open source drives innovation, while proprietary AI provides enterprise-grade performance. Many companies already combine both approaches.</p>
+
+    <h2>✨ Final Thoughts</h2>
+    <p>This battleground isn’t about who wins—it’s about making the right choice for your goals. Open Source AI gives freedom and flexibility, while Proprietary AI offers reliability and convenience. 
+    The best strategy is to see them as complementary tools that can help you innovate, scale, and succeed.</p>
+
+    <h2>📌 Key Takeaways</h2>
+    <ul>
+      <li>Open Source AI = transparency, flexibility, and cost-effectiveness</li>
+      <li>Proprietary AI = reliability, support, and enterprise-grade performance</li>
+      <li>The choice depends on your role—student, startup, enterprise, or developer</li>
+      <li>The future will be a hybrid approach combining both worlds</li>
+    </ul>
+  `
+  }
+
 
 
 
