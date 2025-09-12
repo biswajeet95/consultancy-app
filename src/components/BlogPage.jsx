@@ -13,6 +13,7 @@ import {
   useTheme,
   Fab,
   Tooltip,
+  Grid,
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import { Helmet } from "react-helmet-async";
@@ -35,12 +36,8 @@ const BlogPage = () => {
     variant6font = "10px";
   }
 
-  // console.log("Blog content:", selectedBlog?.content);
-  // console.log("Current slug:", slug);
-  // console.log("Matched blog:", selectedBlog);
-
   return (
-    <Container sx={{ py: 4, position: "relative" }}>
+    <Container sx={{ py: 4,mb:5 , position: "relative" }}>
       {selectedBlog ? (
         <>
           {/* SEO Helmet Section for individual blog */}
@@ -97,7 +94,11 @@ const BlogPage = () => {
 
           <Box sx={{ mb: 2 }}>
             {selectedBlog.tags?.map((tag, index) => (
-              <Link key={index} to={`/tags/${tag.toLowerCase()}`} style={{ textDecoration: 'none' }}>
+              <Link
+                key={index}
+                to={`/tags/${tag.toLowerCase()}`}
+                style={{ textDecoration: "none" }}
+              >
                 <Typography
                   variant="caption"
                   sx={{ mr: 1, color: "#1976d2", fontWeight: 500 }}
@@ -140,45 +141,65 @@ const BlogPage = () => {
             All Blogs
           </Typography>
 
-          <Box display="flex" flexWrap="wrap" gap={3} justifyContent="center">
-            {[...blogs]
-              .reverse()
-              .map((blog) => (
-                <Card
-                  key={blog.id}
-                  sx={{ width: 280, cursor: "pointer" }}
-                  onClick={() => navigate(`/blogs/${blog.slug}`)}
-                >
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image={blog.image}
-                    alt={blog.title}
-                  />
-                  <CardContent>
-                    <Typography variant="h6">{blog.title}</Typography>
-                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mt: 1 }}>
-                      {blog.tags?.map((tag, index) => (
-                        <Link
-                          key={index}
-                          to={`/tags/${tag.toLowerCase()}`}
-                          style={{ textDecoration: "none" }}
-                        >
-                          <Typography
-                            variant="caption"
-                            sx={{ color: "#1976d2", fontWeight: 500 }}
+          {/* ✅ Responsive Grid for 3 cards per row */}
+          <Box sx={{ flexGrow: 1, mt: 3 }}>
+            <Grid container spacing={3} justifyContent="center">
+              {[...blogs].reverse().map((blog) => (
+                <Grid item xs={12} sm={6} md={4} key={blog.id}>
+                  <Card
+                    sx={{
+                      height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      cursor: "pointer",
+                    }}
+                    onClick={() => navigate(`/blogs/${blog.slug}`)}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="180"
+                      image={blog.image}
+                      alt={blog.title}
+                    />
+                    <CardContent sx={{ flexGrow: 1 }}>
+                      <Typography variant="h6">{blog.title}</Typography>
+
+                      <Box
+                        sx={{
+                          display: "flex",
+                          flexWrap: "wrap",
+                          gap: 1,
+                          mt: 1,
+                        }}
+                      >
+                        {blog.tags?.map((tag, index) => (
+                          <Link
+                            key={index}
+                            to={`/tags/${tag.toLowerCase()}`}
+                            style={{ textDecoration: "none" }}
                           >
-                            #{tag}
-                          </Typography>
-                        </Link>
-                      ))}
-                    </Box>
-                    <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-                      {blog.description}
-                    </Typography>
-                  </CardContent>
-                </Card>
+                            <Typography
+                              variant="caption"
+                              sx={{ color: "#1976d2", fontWeight: 500 }}
+                            >
+                              #{tag}
+                            </Typography>
+                          </Link>
+                        ))}
+                      </Box>
+
+                      <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        sx={{ mt: 1 }}
+                      >
+                        {blog.description}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
               ))}
+            </Grid>
           </Box>
         </>
       )}

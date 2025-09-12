@@ -1,6 +1,4 @@
 
-
-
 import aiImage from "../assets/images/5-AI-Advancements.jpg.jpeg";
 import webImage from "../assets/images/0x0.jpg.webp";
 import healthImage from "../assets/images/artificial-intelligence.jpg.jpg";

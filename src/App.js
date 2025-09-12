@@ -43,7 +43,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from './components/Dashboard';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Loader from './loader/Loader';
 import Slidenavbar from './components/Slidenavbar';
 import BlogPage from './components/BlogPage';
@@ -66,7 +66,7 @@ const App = () => {
       {loading && <Loader />}
       {!loading && (
         <Router>
-          <Navbar />
+          {/* <Navbar /> */}
           <Box sx={{ mt: '5.5em' }}>
             <Routes>
             <Route path="/" element={<Dashboard/>} />
