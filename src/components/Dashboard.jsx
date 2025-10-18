@@ -3,9 +3,6 @@ import HeroSection from './HeroSection';
 import { Box } from '@mui/material';
 import Ditails from './Ditails';
 import Footer from './Footer';
-import OurService from './OurService';
-import ContactPage from './ContactPage';
-import PrivacyPolicy from './PrivacyPolicy';
 import Navbar from './Navbar';
 
 const Dashboard = () => {
@@ -23,18 +20,6 @@ const Dashboard = () => {
         </section>
         <section id="blogs">
           <Ditails />
-        </section>
-        <section id="service">
-          <OurService />
-        </section>
-        <section id="privacypolicy">
-          <PrivacyPolicy />
-        </section>
-        <section id="contact">
-          <ContactPage />
-        </section>
-        <section id="about">
-
         </section>
         <Footer />
       </Box>

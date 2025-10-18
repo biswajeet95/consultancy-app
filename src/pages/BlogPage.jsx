@@ -17,6 +17,7 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import { Helmet } from "react-helmet-async";
+import Navbar from "../components/Navbar";
 
 const BlogPage = () => {
   const { slug } = useParams();
@@ -37,7 +38,10 @@ const BlogPage = () => {
   }
 
   return (
-    <Container sx={{ py: 4,mb:5 , position: "relative" }}>
+
+    <>
+    <Navbar />
+     <Container sx={{ py: 4,mb:5 , position: "relative" }}>
       {selectedBlog ? (
         <>
           {/* SEO Helmet Section for individual blog */}
@@ -224,6 +228,8 @@ const BlogPage = () => {
         </Fab>
       </Tooltip>
     </Container>
+    </>
+   
   );
 };
 

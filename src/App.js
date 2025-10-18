@@ -46,8 +46,11 @@ import Dashboard from './components/Dashboard';
 // import Navbar from './components/Navbar';
 import Loader from './loader/Loader';
 import Slidenavbar from './components/Slidenavbar';
-import BlogPage from './components/BlogPage';
-
+import BlogPage from './pages/BlogPage';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Service from './pages/Service';
 import { Box } from '@mui/material';
 import './App.css';
 
@@ -74,7 +77,10 @@ const App = () => {
               <Route path="/blogs" element={<BlogPage />} />
               {/* <Route path="/blogs/:id" element={<BlogPage />} /> */}
               <Route path="/blogs/:slug" element={<BlogPage />} />
-
+              <Route path='/about' element={<About/>} />
+              <Route path='/contact' element={<Contact/>} />
+              <Route path='/privacyPolicy' element={<PrivacyPolicy />} />
+              <Route path='/service' element={<Service/>} /> 
             </Routes>
           </Box>
           <Slidenavbar />

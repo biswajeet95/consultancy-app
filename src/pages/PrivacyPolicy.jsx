@@ -1,8 +1,9 @@
 
+
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Grid, useMediaQuery, useTheme } from '@mui/material';
-
-const OurService = () => {
+import Navbar from '../components/Navbar'
+const PrivacyPolicy = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
@@ -24,6 +25,8 @@ const OurService = () => {
     }
 
     return (
+      <>
+      <Navbar />
         <Box
             sx={{
                 width: '100%',
@@ -36,7 +39,7 @@ const OurService = () => {
                 transform: mounted ? 'translateY(0)' : 'translateY(20px)'
             }}
         >
-            <Typography variant="h4" sx={{ fontWeight: '800', fontSize: variant6font, mb: 3 }}>
+            <Typography variant="h4" sx={{ fontWeight: '800', fontSize: variant6font, mb: 3 , mt:4 }}>
                 PRIVACY POLICY
             </Typography>
             <Grid container sx={{ p: 1, justifyContent: 'center' }}>
@@ -105,6 +108,8 @@ const OurService = () => {
                 </Grid>
             </Grid>
         </Box>
+      </>
+      
     );
 };
 
@@ -123,4 +128,5 @@ const gridItemStyle = (fontSize) => ({
     transform: 'translateY(0)'
 });
 
-export default OurService;
+export default PrivacyPolicy;
+
