@@ -24,6 +24,7 @@ import techForRemoteWork from "../assets/images/techForRemoteWork.jpg";
 import smartHomeAutomation2025 from "../assets/images/smartHomeAutomation2025.jpg";
 import privacyTools from "../assets/images/privacyTools.jpg";
 import aiCyberattacks from "../assets/images/aiCyberattacks.jpg";
+import digitalHygiene from "../assets/images/digitalHygiene.jpg"
 export const blogs = [
   {
     id: 1,
@@ -1841,14 +1842,14 @@ export const blogs = [
     </ul>
   `
   }, {
-  id: 24,
-  slug: "foldables-vs-wearables",
-  title: "Reviews & Comparisons: Foldables, Wearables (Apple Vision Pro, Galaxy Ring)",
-  description: "Explore foldables and wearables in 2025. Compare Apple Vision Pro, Galaxy Ring, and foldable smartphones—their pros, cons, and which one suits your lifestyle best.",
-  image: foldablesVsWearables, // Replace with your imported image variable
-  date: "2025-09-10",
-  tags: ["Foldables", "Wearables", "Apple Vision Pro", "Galaxy Ring", "Technology"],
-  content: `
+    id: 24,
+    slug: "foldables-vs-wearables",
+    title: "Reviews & Comparisons: Foldables, Wearables (Apple Vision Pro, Galaxy Ring)",
+    description: "Explore foldables and wearables in 2025. Compare Apple Vision Pro, Galaxy Ring, and foldable smartphones—their pros, cons, and which one suits your lifestyle best.",
+    image: foldablesVsWearables, // Replace with your imported image variable
+    date: "2025-09-10",
+    tags: ["Foldables", "Wearables", "Apple Vision Pro", "Galaxy Ring", "Technology"],
+    content: `
     <h2>📱 Foldables: Smartphones That Bend to Your Lifestyle</h2>
     <p>Foldable smartphones started as futuristic concepts but are now practical, stylish devices. Brands like Samsung, Oppo, and Google are leading the charge with durable hinges, multitasking features, and stunning displays.</p>
 
@@ -1903,15 +1904,15 @@ export const blogs = [
       <li>The right choice depends on your lifestyle and priorities</li>
     </ul>
   `
-}, {
-  id: 25,
-  slug: "tech-for-remote-work",
-  title: "Tech for Remote Work: Best Gadgets and Setups",
-  description: "Discover the best gadgets and setups to boost your productivity while working remotely. From laptops and ergonomic chairs to noise-cancelling headphones and smart lighting, learn how to create a perfect home office.",
-  image: techForRemoteWork, // Replace with your imported image variable
-  date: "2025-09-12",
-  tags: ["Remote Work", "Gadgets", "Productivity", "Work From Home", "Technology"],
-  content: `
+  }, {
+    id: 25,
+    slug: "tech-for-remote-work",
+    title: "Tech for Remote Work: Best Gadgets and Setups",
+    description: "Discover the best gadgets and setups to boost your productivity while working remotely. From laptops and ergonomic chairs to noise-cancelling headphones and smart lighting, learn how to create a perfect home office.",
+    image: techForRemoteWork, // Replace with your imported image variable
+    date: "2025-09-12",
+    tags: ["Remote Work", "Gadgets", "Productivity", "Work From Home", "Technology"],
+    content: `
     <h2>🏡 The Rise of Remote Work</h2>
     <p>Remote work, once a rare perk, has now become the new normal for millions worldwide. But let’s be honest—working from home isn’t always smooth. From shaky internet connections to uncomfortable chairs, your setup can make or break your productivity. The good news? With the right tech, remote work can feel seamless, comfortable, and even inspiring.</p>
 
@@ -2002,15 +2003,15 @@ export const blogs = [
       <li>Wellness tools help avoid burnout</li>
     </ul>
   `
-}, {
-  id: 26,
-  slug: "smart-home-automation-2025",
-  title: "Smart Home Automation in 2025: What's Worth Your Money?",
-  description: "Discover the best smart home devices worth your money in 2025. From security systems and smart lighting to climate control and appliances, learn how to build a smarter, safer, and more comfortable home.",
-  image: smartHomeAutomation2025, // Replace with your imported image variable
-  date: "2025-09-21",
-  tags: ["Smart Home", "Technology", "Gadgets", "Home Automation", "2025 Trends"],
-  content: `
+  }, {
+    id: 26,
+    slug: "smart-home-automation-2025",
+    title: "Smart Home Automation in 2025: What's Worth Your Money?",
+    description: "Discover the best smart home devices worth your money in 2025. From security systems and smart lighting to climate control and appliances, learn how to build a smarter, safer, and more comfortable home.",
+    image: smartHomeAutomation2025, // Replace with your imported image variable
+    date: "2025-09-21",
+    tags: ["Smart Home", "Technology", "Gadgets", "Home Automation", "2025 Trends"],
+    content: `
     <h2>🏠 Why Smart Homes Matter in 2025</h2>
     <p>Smart home devices have moved from being futuristic luxuries to everyday essentials. They save time, cut electricity bills, boost security, and bring peace of mind. Imagine walking into your house after work—lights turn on to your preferred brightness, your AC adjusts automatically, and doors lock themselves without worry. That’s the comfort of 2025.</p>
 
@@ -2090,15 +2091,15 @@ export const blogs = [
       <li>Don’t waste money on gimmicky devices</li>
     </ul>
   `
-} , {
-  id: 27,
-  slug: "best-privacy-tools-vpns-2025",
-  title: "Best Privacy Tools & VPNs in 2025",
-  description: "Explore the best VPNs and privacy tools in 2025. From NordVPN and ProtonVPN to password managers and privacy-friendly browsers, learn how to protect your data and stay secure online.",
-  image: privacyTools, // Replace with your imported image variable
-  date: "2025-09-24",
-  tags: ["Privacy", "VPN", "Cybersecurity", "Technology", "2025 Tools"],
-  content: `
+  }, {
+    id: 27,
+    slug: "best-privacy-tools-vpns-2025",
+    title: "Best Privacy Tools & VPNs in 2025",
+    description: "Explore the best VPNs and privacy tools in 2025. From NordVPN and ProtonVPN to password managers and privacy-friendly browsers, learn how to protect your data and stay secure online.",
+    image: privacyTools, // Replace with your imported image variable
+    date: "2025-09-24",
+    tags: ["Privacy", "VPN", "Cybersecurity", "Technology", "2025 Tools"],
+    content: `
     <h2>🔐 Why Privacy Tools Still Matter in 2025</h2>
     <p>Even in 2025, data remains the new oil. Every click, search, and login is valuable to someone—advertisers, data brokers, even hackers. Privacy tools are no longer just for the paranoid; they’re for anyone who wants control over their digital footprint.</p>
     <p>They protect you from:</p>
@@ -2176,15 +2177,15 @@ export const blogs = [
     <h2>✨ Final Thoughts</h2>
     <p>Privacy in 2025 isn’t about buying every tool available—it’s about choosing the ones that make your life simpler and safer. Start small: secure your passwords, enable two-factor authentication, and try a trusted VPN. Over time, build your toolkit so privacy becomes a daily habit, not a burden.</p>
   `
-}, {
-  id: 28,
-  slug: "ai-powered-cyberattacks-defense-2025",
-  title: "AI-Powered Cyberattacks and How to Defend Yourself",
-  description: "Learn how AI is changing cyberattacks in 2025. From deepfakes and phishing to adaptive malware, discover real-world examples and practical strategies to defend yourself online.",
-  image: aiCyberattacks, // Replace with your imported image variable
-  date: "2025-09-27",
-  tags: ["AI", "Cybersecurity", "Technology", "Online Safety", "2025 Trends"],
-  content: `
+  }, {
+    id: 28,
+    slug: "ai-powered-cyberattacks-defense-2025",
+    title: "AI-Powered Cyberattacks and How to Defend Yourself",
+    description: "Learn how AI is changing cyberattacks in 2025. From deepfakes and phishing to adaptive malware, discover real-world examples and practical strategies to defend yourself online.",
+    image: aiCyberattacks, // Replace with your imported image variable
+    date: "2025-09-27",
+    tags: ["AI", "Cybersecurity", "Technology", "Online Safety", "2025 Trends"],
+    content: `
     <h2>👋 Introduction</h2>
     <p>Technology is evolving faster than ever. Artificial Intelligence (AI) is no longer just powering chatbots, recommendation systems, and self-driving cars—it’s also changing the game in cybersecurity. Unfortunately, just like businesses and individuals use AI for good, cybercriminals are now harnessing its power for malicious purposes.</p>
     <p>Yes, you read that right: <strong>AI-powered cyberattacks are here</strong>, and they’re becoming smarter, faster, and more dangerous every day. But don’t panic—understanding the risks and learning how to protect yourself is the first step toward staying safe in our digital world.</p>
@@ -2264,7 +2265,146 @@ export const blogs = [
     <p>AI-powered cyberattacks may sound terrifying, but <strong>knowledge is power</strong>. By using strong passwords, MFA, staying updated, and letting AI tools defend you, you can stay ahead. Cybersecurity isn’t about being perfect—it’s about being prepared.</p>
     <p>Stay safe, stay curious, and remember: your digital security is in your hands.</p>
   `
-}
+  }, {
+    id: 29,
+    slug: "digital-hygiene-how-to-stay-safe-online-today",
+    title: "Digital Hygiene: How to Stay Safe Online Today",
+    description: "Learn how to protect your online identity, data, and privacy with simple digital hygiene habits. From passwords to phishing scams, discover practical steps to stay safe online in today's connected world.",
+    image: digitalHygiene, // Replace with your imported image variable
+    date: "2025-10-24",
+    tags: ["Digital Hygiene", "Cybersecurity", "Online Safety", "Privacy", "Technology Tips"],
+    content: `
+    <h2>👋 Introduction</h2>
+    <p>In a world where our lives are deeply connected to the internet — from shopping, banking, and chatting to working and studying — maintaining <strong>digital hygiene</strong> has become as important as washing your hands. Just like good physical hygiene keeps you healthy, digital hygiene protects your online identity, finances, privacy, and peace of mind.</p>
+    <p>Whether you’re scrolling through social media, storing files on the cloud, or using online payment apps, one careless click can make you a victim of data theft or cybercrime. But don’t worry — with a few mindful habits, you can stay safe, confident, and worry-free in the digital world.</p>
+
+    <h2>💡 What Is Digital Hygiene?</h2>
+    <p>Think of <strong>digital hygiene</strong> as a set of healthy habits that keep your online life safe and organized. It’s all about how you manage your passwords, devices, data, and online activities to reduce your risk of cyberattacks.</p>
+    <ul>
+      <li>Using strong and unique passwords</li>
+      <li>Keeping software and apps updated</li>
+      <li>Being careful about what you click or share</li>
+      <li>Regularly cleaning up old files and accounts</li>
+    </ul>
+    <p>Just like brushing your teeth daily keeps your smile bright, maintaining digital hygiene keeps your online presence strong and secure.</p>
+
+    <h2>🔒 Why Is Digital Hygiene Important?</h2>
+    <p>Cybercrime has grown over 600% since 2020 as people spend more time online. Strong digital hygiene helps you protect your privacy, avoid financial loss, and keep your devices running smoothly.</p>
+    <ul>
+      <li><strong>Protects your privacy:</strong> Keeps your personal data safe from hackers.</li>
+      <li><strong>Prevents financial loss:</strong> Stops fraudsters from accessing your bank details.</li>
+      <li><strong>Keeps devices healthy:</strong> Prevents viruses and malware.</li>
+      <li><strong>Gives peace of mind:</strong> Lets you browse, bank, and shop safely.</li>
+    </ul>
+    <p><em>Example:</em> Riya, a college student, once downloaded free study materials from an unknown site. Her laptop was soon flooded with pop-up ads — a malware infection! She learned the hard way that safe downloads and regular antivirus updates are key parts of digital hygiene.</p>
+
+    <h2>🧭 How to Practice Good Digital Hygiene</h2>
+    <p>Here’s a simple guide to help you strengthen your digital safety habits today.</p>
+
+    <h3>1. Strengthen Your Passwords</h3>
+    <ul>
+      <li>Use strong, unique passwords for every account.</li>
+      <li>Include uppercase, lowercase, numbers, and symbols.</li>
+      <li>Avoid personal info like birthdays or names.</li>
+      <li>Use a password manager (Bitwarden, LastPass, or 1Password).</li>
+    </ul>
+    <p>And always enable <strong>Two-Factor Authentication (2FA)</strong> for an extra security layer.</p>
+
+    <h3>2. Keep Devices and Apps Updated</h3>
+    <p>Updates fix security holes hackers exploit. Enable automatic updates and remove unused apps. Even routers and smart devices need updates!</p>
+    <p><em>Remember WannaCry ransomware in 2017?</em> It infected millions of computers just because they hadn’t installed a free Windows update.</p>
+
+    <h3>3. Clean Your Digital Space Regularly</h3>
+    <ul>
+      <li>Delete unnecessary files and old emails.</li>
+      <li>Unsubscribe from spam newsletters.</li>
+      <li>Clear browser cache and cookies.</li>
+      <li>Review cloud storage and remove duplicates.</li>
+    </ul>
+    <p>Regular digital cleanup improves speed and keeps your private data secure.</p>
+
+    <h3>4. Be Careful with Public Wi-Fi</h3>
+    <p>Free Wi-Fi is convenient but risky — hackers can create fake hotspots to steal data. Avoid online banking or shopping on public networks, or use a <strong>VPN</strong>.</p>
+    <p><em>Example:</em> A traveler once connected to “FreeAirportWiFi” — it was a hacker’s trap that stole his PayPal details!</p>
+
+    <h3>5. Manage Social Media Privacy</h3>
+    <ul>
+      <li>Limit what you share (avoid posting your live location).</li>
+      <li>Review your privacy settings regularly.</li>
+      <li>Be cautious of unknown friend requests.</li>
+      <li>Ignore messages that seem too good to be true.</li>
+    </ul>
+    <p>If a platform sends a link to “verify your account,” double-check — it might be a phishing attempt.</p>
+
+    <h3>6. Use Antivirus and Firewalls</h3>
+    <p>Install trusted antivirus software (Norton, Bitdefender, Kaspersky) and keep real-time protection enabled. Firewalls also block suspicious network activity.</p>
+    <p>Free antivirus programs are fine for basic users, but premium ones offer stronger protection and identity monitoring.</p>
+
+    <h3>7. Protect Your Financial Data</h3>
+    <ul>
+      <li>Use official banking apps only.</li>
+      <li>Check for “https://” before entering details.</li>
+      <li>Never click on payment links in SMS or WhatsApp.</li>
+      <li>Don’t save card info on public devices.</li>
+    </ul>
+    <p>Many people have lost money by entering details on fake shopping sites that mimic real ones. Always verify the site’s authenticity first.</p>
+
+    <h3>8. Backup Your Data</h3>
+    <p>Data loss can strike anytime. Use both cloud storage (Google Drive, Dropbox) and external drives. Schedule automatic backups weekly.</p>
+    <p><strong>Rule:</strong> Two backups are better than one — always keep copies in two places.</p>
+
+    <h3>9. Recognize Common Online Scams</h3>
+    <ul>
+      <li>Phishing emails pretending to be your bank.</li>
+      <li>Lottery or prize messages asking for fees.</li>
+      <li>Fake job offers or investment schemes.</li>
+      <li>Malicious links disguised as shipment tracking.</li>
+    </ul>
+    <p>If something feels off, it probably is. Trust your instincts and verify directly with the official source.</p>
+
+    <h3>10. Educate Your Family</h3>
+    <p>Teach children, parents, and friends about online safety. Cybersecurity starts at home!</p>
+    <ul>
+      <li>Don’t share passwords.</li>
+      <li>Don’t download random apps.</li>
+      <li>Check URLs before entering info.</li>
+      <li>Report suspicious messages quickly.</li>
+    </ul>
+
+    <h2>📋 Digital Hygiene Checklist</h2>
+    <table>
+      <tr><th>Category</th><th>Action</th></tr>
+      <tr><td>Passwords</td><td>Use strong, unique passwords + 2FA</td></tr>
+      <tr><td>Updates</td><td>Keep all apps and software updated</td></tr>
+      <tr><td>Cleanup</td><td>Delete old files and cache</td></tr>
+      <tr><td>Public Wi-Fi</td><td>Avoid sensitive logins</td></tr>
+      <tr><td>Social Media</td><td>Limit personal details shared</td></tr>
+      <tr><td>Antivirus</td><td>Install and keep it updated</td></tr>
+      <tr><td>Financial Data</td><td>Use official sites and apps</td></tr>
+      <tr><td>Backup</td><td>Cloud + external backup weekly</td></tr>
+      <tr><td>Awareness</td><td>Stay informed about new scams</td></tr>
+    </table>
+
+    <h2>❓ FAQs</h2>
+    <ul>
+      <li><strong>Q:</strong> What’s the simplest way to improve digital hygiene?<br><strong>A:</strong> Change your passwords and enable 2FA today.</li>
+      <li><strong>Q:</strong> How often should I clean my devices?<br><strong>A:</strong> Once a month is a good routine.</li>
+      <li><strong>Q:</strong> Are free antivirus tools reliable?<br><strong>A:</strong> Some are, but paid ones provide better protection and support.</li>
+      <li><strong>Q:</strong> What if I click a suspicious link?<br><strong>A:</strong> Disconnect, scan for malware, change passwords, and monitor accounts.</li>
+      <li><strong>Q:</strong> Is digital hygiene only for tech experts?<br><strong>A:</strong> No! Anyone who uses a phone or computer should practice it.</li>
+    </ul>
+
+    <h2>🚀 The Future of Digital Hygiene</h2>
+    <p>As AI, IoT, and smart devices evolve, cyber hygiene will become even more essential. Future tools may automate security, but awareness will remain your strongest defense.</p>
+    <p>Being cautious doesn’t mean living in fear — it means being mindful and smart online.</p>
+
+    <h2>🌟 Conclusion</h2>
+    <p>Just like exercise keeps your body healthy, <strong>digital hygiene keeps your online life safe</strong>. Every small habit — updating an app, changing a password, or avoiding a shady link — strengthens your digital safety.</p>
+    <p>Take five minutes today to clean your inbox, check your passwords, and back up your data. These simple actions protect your identity, money, and peace of mind.</p>
+    <p><strong>Stay safe, stay smart — your digital health is in your hands!</strong> 🌐✨</p>
+  `
+  }
+
 
 
 ];
